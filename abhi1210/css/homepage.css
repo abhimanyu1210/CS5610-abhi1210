@@ -1,0 +1,246 @@
+﻿.container {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*Styling for vertical navigation bars*/
+.verNavClass{
+    margin-top:100px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.verNavClass li{
+    margin-top:10px;
+    text-align:center;
+    height:30px;
+    width:inherit;
+    margin-right:50px;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    border:2px solid yellow;
+    -webkit-transition:all 0.2s ease-in-out;
+}
+
+.verNavClass li:hover{
+    box-shadow:2px -2px 2px yellow;
+    -webkit-transform:rotateY(20deg);
+    background-color:Background;
+}
+
+/* Side Menu*/
+
+.sideMenu{
+    background:url(../images/homepage/sideMenu.jpg) repeat center;
+    left:-25%;
+    height:100%;
+    position:fixed;
+    background-size:cover;
+    overflow:auto;
+    padding:10px;
+	width: 25%;
+}
+
+.sideMenu a{
+    transition:all 0.5s ease-in;
+    font-family:'Bookman Old Style';
+    font-size:large;
+    font-weight:bold;
+    text-align:center;
+    color:white;   
+}
+
+.sideMenu a:hover{
+    text-shadow:2px 2px 2px 2px orange;
+}
+
+.sideMenu p{
+    margin-top:10px;
+    text-align:center;
+    font-size:30px;
+    color:white;
+    text-shadow:5px 5px 5px yellow;
+    font-family:'Bookman Old Style';
+}
+
+/* Main Page Code*/
+.mainPage{
+    
+    background:url(../images/homepage/homeBackground2.jpg) repeat center;
+    left:0%;
+    height:100%;
+    position:fixed;
+	background-size: cover;
+    overflow:auto;
+    width:100%;
+    border-left:solid 5px blue;
+}
+
+
+/*Menu Image*/
+
+#imglabelId{
+    margin-left:20px;
+    text-shadow:5px 5px 5px yellow;
+    font-family:'Bookman Old Style';
+    font-size:medium;
+    color:whitesmoke;
+}
+
+#menuImg{
+    margin-top:10px;
+    margin-left: 20px;
+    height:80px;
+    width:80px;
+    position:relative;
+    -webkit-transition:all 0.2s ease-in;
+}
+
+#menuImg:hover{
+    cursor:pointer;
+    -webkit-transform: rotate(180deg);
+    
+}
+
+/*About Me Section*/
+.aboutMe{
+    clear:both;
+    display:block;
+    margin:auto;    
+    margin-top:0px;
+    max-width: 700px;
+    min-height: 350px;
+}
+
+.abtmeImage{
+    width:500px;
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition:all 2s ease-in-out;
+}
+
+.abtmeImage:hover{
+    -webkit-transform:rotateX(25deg);
+}
+
+.aboutMe p{
+    margin-top:20px;
+    margin-left:30px;
+    max-width:400px;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color:darkblue;
+    opacity: 0.4;
+    filter: alpha(opacity=70);
+}
+
+.headshot{
+    margin-left:10px;
+    margin-top:0px;
+    border-radius:100%;
+    width:300px;
+    height:300px;
+    border: 1px solid blue;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.headshot:hover{
+    -webkit-transform:rotateX(20deg);
+    -webkit-filter:brightness(2);
+}
+
+.aboutMe div{
+    width:300px;
+    float:left;
+}
+
+#text2 a{
+    color:orange;
+    text-shadow:1px 1px 1px yellow;
+}
+
+/*contact me*/
+
+.links{
+    position:fixed;
+    right:0;
+    bottom:0;
+    float:right;
+    width:200px;
+    margin:auto;
+}
+
+.fbIcon,.linkedIn, .plusIcon{
+    left:0;
+    bottom:0;
+    margin-left:10px;
+    height:30px;
+    width:30px;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.fbIcon:hover,.linkedIn:hover{
+    cursor:pointer;
+    -webkit-transform:scale(1.2,1.2);
+}
+
+.plusIcon:hover{
+    cursor:pointer;
+    -webkit-transform:scale(1.2,1.2);
+}
+
+/*Footer*/
+#footer{
+    width:350px;
+    margin:auto;
+}
+
+#footer p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color:darkblue;
+    opacity: 0.7;
+    text-shadow:1px 2px 1px green;
+}
+
+hr{
+    color:blue;
+}
+
+/* Direct Links */
+.directLinks{
+    width:600px;
+    margin:auto;
+    clear:both;
+}
+
+.directLinks img{
+    border-radius:100%;
+    width:150px;
+    height:150px;
+    padding:10px;
+    opacity:1;
+    box-shadow: 1px 1px 1px blue;
+
+}
+
+.horLinks{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+
+.horLinks li{
+    float:left;
+    padding:20px;
+}
+
+.directLinks h2{
+    opacity:1;
+}

@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Responsive Web Using CSS</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="responsiveWeb.css" />
+    </head>
+
+
+    <body>
+        <header>
+            <h2>Responsive Web Design</h2>
+        </header>
+
+        <section>
+            <h3>1) Objective</h3>
+            <p>
+                The objective of this experiment is to learn how to control html rendering based on screen or device being used.
+            </p>
+        </section>
+
+        <header>
+            <h3>2) Experiment</h3>
+        </header>
+
+        <!-- Responsive Simple Text on page -->
+        <h3>2.1) Responsive Text</h3>
+
+        <h4>Description:</h4>
+        <p>
+            Initially, the maximum width for set for the text below is 300px(lowest the browser can go to is 328px). The text is allowed to float left which tells it to take as much as space it can take.
+            As we decrease the size of the page, the text adapts itself to the changing width and places itself one below the other.
+        </p>
+        
+        <h4>Experiment:</h4>
+        <div id="respText">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+
+        
+        <!-- Responsive Images on page-->
+        <h3>2.2) Responsive Images</h3>
+
+        <h4>Description:</h4>
+        <p>
+            There are 3 images below: a tiger, a tiger cub and a cat. Depending on the size of the html page, the image toggles. This is done
+            using @media and putting adjacent breakpoints on the page. What we achieve by doing this is that a desktop user will see a tiger, a
+            tablet user will see a tiger cub and mobile user will see a cat.            
+        </p>
+
+        <h4>Experiment:</h4>
+        <div id="respImg">
+            <img id="tigerId" src="../../../images/responsiveImagesTest/1.jpg" />
+
+            <img id="cubId" src="../../../images/responsiveImagesTest/2.jpg" />
+
+            <img id="catId" src="../../../images/responsiveImagesTest/5.jpg" />
+        </div>
+
+        <!-- Responsive navigation bar (show and hide depending on size of the page) -->
+        <h3>2.3) Responsive Navigation Bar</h3>
+        <h4>Description:</h4>
+        <p>
+            This is a navigation bar from previous experiment. If the horizontal navigation is not made responsive or adaptive to changing screen sizes,
+            it looks shabby and messes up the look-and-feel of the web-site. When screen size goes below a certain width,
+            we display a vertical navigation bar using css which has the same links that were displayed in the navigation bar.
+        </p>
+
+        <h4>Experiment:</h4>
+        <div>
+            <!-- Horizontal navigation bar -->
+            <ul class="nav nav-pills" id="horNav">
+                <li><a href="../../sitestatistics/" target="_blank">SiteStatistics</a></li>
+                <li><a href="../../statistics/" target="_blank">Statistics</a></li>
+                <li><a href="../../source/" target="_blank">Source</a></li>
+                <li><a href="../../search/" target="_blank">Search</a></li>
+                <li><a href="../../searchtree/" target="_blank">SearchTree</a></li>
+                <li><a href="../../textview/" target="_blank">TextView</a></li>
+                <li><a href="../../filelist.aspx" target="_blank">FileList</a></li>
+                <li><a href="../../autofile.aspx" target="_blank">AutoFile</a></li>
+                <li><a href="../../images/autoimage.aspx" target="_blank">Images</a></li>
+                <li><a href="../../blog/" target="_blank">Blog</a></li>
+                <li><a href="../" target="_blank">Experiments</a></li>
+            </ul>
+
+            <!-- Vertical Navigation Bar-->
+            <ul id="verNav"  class="nav nav-pills nav-stacked" style="width:100px">
+                <li><a href="../../sitestatistics/" target="_blank">SiteStatistics</a></li>
+                <li><a href="../../statistics/" target="_blank">Statistics</a></li>
+                <li><a href="../../source/" target="_blank">Source</a></li>
+                <li><a href="../../search/" target="_blank">Search</a></li>
+                <li><a href="../../searchtree/" target="_blank">SearchTree</a></li>
+                <li><a href="../../textview/" target="_blank">TextView</a></li>
+                <li><a href="../../filelist.aspx" target="_blank">FileList</a></li>
+                <li><a href="../../autofile.aspx" target="_blank">AutoFile</a></li>
+                <li><a href="../../images/autoimage.aspx" target="_blank">Images</a></li>
+                <li><a href="../../blog/" target="_blank">Blog</a></li>
+                <li><a href="../" target="_blank">Experiments</a></li>
+            </ul>
+        </div>
+
+
+        <br/><br />
+
+        <footer>
+            <h3>Source Code:</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/css/001-ResponsiveWeb.html" target="_blank">HTML</a>
+            <a style="padding-left:10px" href="../../../fileview/Default.aspx?~/experiments/css/responsiveWeb.css" target="_blank">CSS</a>
+
+            <h3>References:</h3>
+            <a href="http://www.w3schools.com/css/css_mediatypes.asp" target="_blank">W3schools</a>
+        </footer>
+
+    </body>
+</html>

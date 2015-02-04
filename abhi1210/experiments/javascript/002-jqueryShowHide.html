@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Side-bar Show And Hide</title>
+        <link rel="stylesheet" href="jsStyleSheet.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="showHide.js"></script>
+    </head>
+
+<body>
+    <header>
+        <h1 style="text-align:center;"> Showing And Hiding Part Of Page Using Javascript (Used On Homepage)</h1>
+    </header>
+
+    <h2>Description:</h2>
+    <p>
+        This experiment is using Jquery to show and hide part of the screen. In detail, the page is divided into
+        2 sections, the menu section and the body section. On button click, we open the menu-side bar. This will also
+        be used on the home page to hold all the quick links.
+    </p>
+
+
+    <div class="container">
+
+        <div class="mainBody">
+            <div id="sideMenu" class="sideMenu">
+                <p class="info">
+                    This is the side-bar menu. You can close this menu by clicking on the button again.
+                </p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mainPage">
+                <p class="info">
+                    This is where the main page content goes. The side-bar section is hidden right now.
+                    Click on button below to open/close the sidebar
+                </p>
+
+                <button id="toggle"> Open / Close</button>
+            </div>
+        </div>
+
+
+        <section>
+            <h3>Source Code</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/javascript/002-jqueryShowHide.html" target="_blank">HTML</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/javascript/jsStyleSheet.css" target="_blank">CSS</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/javascript/showHide.js" target="_blank">Javascript</a>
+        </section>
+
+        <section>
+            <h3> References</h3>
+            <p><a href="http://www.codecademy.com/en/tracks/javascript" target="_blank">Tutorial From CodeCademy</a></p>
+        </section>
+  </div>
+
+</body>
+</html>

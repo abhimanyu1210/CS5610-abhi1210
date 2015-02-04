@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Displaying Data in HTML5 Tables</title>
+        <style>
+
+            #simpletableId,td,th{
+                border:1px solid;
+                border-color:black;
+                border-collapse:collapse;
+            }
+            
+            td{
+                width:200px;
+            }
+            
+            #tableBorderSpacing{
+                border-spacing:5px;
+            }
+
+            caption{
+                color:brown;
+            }
+
+            #theadId{
+                background-color:green;
+            }
+            #tbodyId{
+                background-color:blue;
+            }
+            #tfootId{
+                background-color:aqua;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>Displaying Data in HTML5 Tables</h2>
+
+        <a href="#documentation">Click here to read the documentation</a>
+
+
+        <!-- Actual Experiment -->
+        <h2> Experiment </h2>
+        <div id="tableContainer">
+
+            <h3>1) Simple Table</h3>
+            <table id="simpletableId">
+                <tr>
+                    <th>#</th>
+                    <th>Customer Name</th>
+                    <th>Item/s Ordered</th>
+                    <th>Total Bill</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>abc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>jcasd</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>abasfc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>xcv</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>axcvbc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>abxcvc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>xcvabc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>aasdasdbc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>abasdc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>aasdbc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+            </table>
+
+            <h3>2) Table with Caption and Border Spacing</h3>
+            <table id="tableBorderSpacing">
+                <caption>This is the caption for this table</caption>
+                <tr>
+                    <th>#</th>
+                    <th>Customer Name</th>
+                    <th>Item/s Ordered</th>
+                    <th>Total Bill</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>abc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>jcasd</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>abasfc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>xcv</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>axcvbc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>abxcvc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>xcvabc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>aasdasdbc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>abasdc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>aasdbc</td>
+                    <td>a</td>
+                    <td>10</td>
+                </tr>
+            </table>
+
+
+            <h3>3) Table with Column Span And Row Span</h3>
+            <table id="table Column Span">
+                <tr>
+                    <th>#</th>
+                    <th>Customer Name</th>
+                    <th style="background-color:aqua" colspan="2">Phone Numbers</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>abc</td>
+                    <td>123213213</td>
+                    <td>443543</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td style="background-color:aqua" rowspan="2">jcasd</td>
+                    <td>123213213</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>jcasd</td>
+                    <td>7843234</td>
+                    <td>10234234</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>jcasd</td>
+                    <td>245643</td>
+                </tr>
+            </table>
+
+
+            <h3>4) Using thead, tbody and tfoot (Shaded With Different Colors)</h3>
+            <table id="thead_tbody_tfootId">
+                <thead id="theadId">
+                    <tr>
+                        <th>#</th>
+                        <th>Customer Name</th>
+                        <th>Item/s Ordered</th>
+                        <th>Total Bill</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyId">
+                    <tr>
+                        <td>1</td>
+                        <td>abc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>jcasd</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>abasfc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>xcv</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>axcvbc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>abxcvc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>xcvabc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>aasdasdbc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>abasdc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+
+                <tfoot id="tfootId">
+                    <tr>
+                        <td>10</td>
+                        <td>aasdbc</td>
+                        <td>a</td>
+                        <td>10</td>
+                    </tr>
+                </tfoot>
+            </table>
+                
+        </div>
+
+
+        <!-- Documenation -->
+
+        <div id="documentation">
+            <a name="documentation" />
+
+            <h2 style="align-content:center"> Documentation </h2>
+
+            <section>
+                <h3>1) Objective</h3>
+                <p>
+                    The objective of this experiment was to explore Tables in HTML5.
+                </p>
+            </section>
+
+            <section>
+                <h3>2) Description</h3>
+                <p>
+                    Displaying data in a tabular format is a very common usage for any kind of web-sites. Tables can be formatted
+                    using bootstrap or creating your own CSS styles. Data that we get through open-source API during our projects
+                    or future assignments needs to be displayed in some kind of a tabular format. 
+                    This experiment aims on simply creating tables. Future experiments with CSS explore on styling and making them
+                    more responsive.
+                </p>
+            </section>
+
+            <section>
+                <h3>3) Source Code</h3>
+                <a href="../../../fileview/Default.aspx?~/experiments/html/001-Tables.html" target="_blank">HTML</a>
+            </section>
+
+            <section>
+                <h3>4) References</h3>
+                <p><a href="http://www.w3schools.com/htmL/html_tables.asp" target="_blank">W3 Schools</a></p>
+            </section>
+
+            <a href="#index">Index</a>
+        </div>
+
+    </body>
+</html>

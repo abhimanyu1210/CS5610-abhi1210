@@ -1,0 +1,96 @@
+﻿.jsAlert p{
+    font-style:italic;
+}
+
+.placeCenter div{
+    display:block;
+    margin:auto;
+}
+
+/*------------------------*/
+
+#imageHolder{
+    margin:auto;
+    height:400px;
+    width:800px;
+    border:solid 1px black;
+}
+
+#myImage{
+    height:inherit;
+    width:inherit;
+}
+
+/*------------------------*/
+
+.sideMenu{
+	background-color:black;
+	left: -285px;
+	height: 100%;
+	position: fixed;
+	width: 285px;
+}
+
+li{
+  color:"white";
+}
+
+.mainPage {
+    background-color:aliceblue;
+    margin-left:20px;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    border:2px solid;
+}
+
+#toggle{
+    display:block;
+    width:150px;
+    margin:auto;
+}
+
+.info{
+    color:brown;
+    font-style:italic;
+    font-size:medium;
+}
+
+/*------------------------*/
+#bigCat{
+    position: relative;
+    left: 155px;
+    top: 9px;
+    width:285px;
+    height:168px;
+    background:url(../../../images/responsiveImagesTest/1.jpg);
+    border:2px solid black;
+}
+
+#cubCat{
+    position: relative;
+    left: -137px;
+    top: -5px;
+    width:120px;
+    height:170px;
+    background:url(../../../images/responsiveImagesTest/2.jpg) center;
+    border:2px solid black;
+}
+
+#smallCat{
+    position: relative;
+    left: 175px;
+    top: -222px;
+    margin:40px;
+    width:120px;
+    height:180px;
+    background:url(../../../images/responsiveImagesTest/5.jpg) center;
+    border:2px solid black;
+    float:right;
+}
+
+#footerId{
+    clear:both;
+}

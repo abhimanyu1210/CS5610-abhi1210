@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Various Experiments Using Javascript</title>
+        <link rel="stylesheet" href="jsStyleSheet.css" />
+        <script type="text/javascript" src="miscFunctions.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align:center;"> Experiments On Various Uses Of Javascript</h1>
+        </header>
+        
+        <div class="jsAlert">
+            <h2>1) On Page Load, Show Alert Box With A Message</h2>
+            <p>Please reload(F5) the page if you did not see the alert box on page load.</p>
+        </div>
+
+        <br />
+
+        <div class="changeInnerHTML">
+            <h2>2) Change Inner HTML Value Using Id Of HTML Tag</h2>
+
+            <p id="changeText">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+
+            <button  onclick="translateText();">Click To Translate Above Text</button>
+            <button onclick="getOriginalText();">Click To See Original Text</button>
+        </div>
+
+        <br/>
+
+        <div>
+            <h2>3) Change CSS Using Javascript</h2>
+            <p> A random hex generator is written in Javascript to get random value for R,G,B and generate color at random for below text. Click on button to change color.</p>
+            <hr />
+            <p id="changeColor">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+            <hr/>
+            <button onclick="changeColor();">Click To Change Color</button>
+        </div>
+
+        <br/>
+
+        <div>
+            <h2>4) Validating And Changing Form Elements Using Javascript</h2>
+
+
+            <h4>4.1) Adding And Subtracting Number Value in Form Using JS</h4>
+            <div id="operatorId">
+                <button id="addBtn" onClick="operator(this.id);">+</button>
+                <input id="numberId" value="0" type="number" />
+                <button id="subtractBtn" onclick="operator(this.id);">-</button>
+            </div>
+ 
+            <br>
+
+            <h4>4.2) Custom Validation On Form Input</h4>
+            <div id="validateId">
+                <p id="resultId">"Your Validation Result Will Appear Here!!"</p>
+                <label for="inputTxt">Enter An Even Number:</label>
+                <input id="inputTxt"/>
+                <button onclick="validateIfEven();">Check If Number Is An Even Number?</button>
+            </div>
+
+        </div>
+
+        <section>
+            <h3> Source Code</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/javascript/000-JSFunctions.html" target="_blank">HTML</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/javascript/jsStyleSheet.css" target="_blank">CSS</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/javascript/miscFunctions.js" target="_blank">Javascript</a>
+        </section>
+
+        <section>
+            <h3> References</h3>
+            <p><a href="http://www.codecademy.com/en/tracks/javascript">Codecademy</a></p>
+            <p><a href="http://www.w3schools.com/js/default.asp" target="_blank">W3 Schools</a></p>
+        </section>
+    </body>
+</html>

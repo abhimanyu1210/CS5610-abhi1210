@@ -60,6 +60,23 @@
                     </td>
                     
                 </tr>
+
+                <tr>
+                    <td>Week 4 (1st - 7th Feb)</td>
+                    <td>
+                        <p id="jqueryUI"><b>More JQuery UI Experiments</b></p>
+                        <ul>
+                            <li><a href="jqueryUI/000-jqueryUIEffects.html" target="_blank">JQuery UI Effects</a></li>
+                            <li><a href="jqueryUI/001-jqueryUIWidgets.html" target="_blank">JQuery UI Widgets</a></li>
+                            <li><a href="jqueryUI/002-pagination.html" target="_blank">Pagination Using Jquery</a></li>
+                        </ul>
+                        <p id="webAPI"><b>Web API And JSON Experiments</b></p>
+                        <ul>
+                            <li><a href="API/000-webAPI.html" target="_blank">Web API and JSON Introduction</a></li>
+                        </ul>
+                    </td>
+                    
+                </tr>
                             
             </table>
         </div>

@@ -1,0 +1,86 @@
+﻿#draggable{
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+    float: left;
+}
+
+#droppable{
+    width: 200px; 
+    height: 200px; 
+    padding: 0.5em; 
+    margin-left:20px;
+    float: left; 
+    border:1px solid black;
+}
+
+hr{
+    clear:both;
+}
+
+/*Drag/Drop At right place*/
+.wrap{
+    display: table-row-group;
+}
+#cs4550Students,#cs5610Students { 
+    width: 120px; 
+    height: 70px; 
+    padding: 0.5em; 
+    float: left;
+    margin-left:10px;
+}
+         
+#cs4550,#cs5610{ 
+    width: 140px; 
+    height: 100px;
+    padding: 0.5em; 
+    float: left; 
+    margin-left:10px;
+    border:1px solid black;
+}
+
+/*Resizable*/
+#resizableAnimate,#resizableGhost { 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em;
+    text-align: center; 
+    margin: 0;
+    border: 1px solid; 
+
+}
+
+/*Selectable*/
+#selectable .ui-selecting { 
+    background: #FECA40; 
+}
+#selectable .ui-selected { 
+    background: #F39814; color: white; 
+}
+#selectable, #sortable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 500px; 
+    border:1px solid;
+}
+#selectable li,#sortable li {
+    text-decoration:none; 
+    border:1px dashed;
+    margin: 3px; 
+    font-size: medium;
+    text-align:center; 
+}
+
+/*Pagination*/
+#page_navigation a {
+    padding: 3px;
+    border: 1px solid gray;
+    margin: 2px;
+    color: black;
+    text-decoration: none;
+}
+
+.active_page{
+    background-color:blue;
+}

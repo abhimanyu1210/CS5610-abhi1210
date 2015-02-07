@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Pagination Using JQuery</title>
+        <script type="text/javascript" src="../../../javascript/jquery/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="../../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+        <script type="text/javascript" src="paginationJS.js"></script>
+        <link href="week3Css.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align:center;"> Pagination Using JQuery </h1>
+        </header>
+        
+
+        <h2>Experiment:</h2>
+        <hr />
+        <br />
+        
+        <h3>Pagination Of Simple Text Using Jquery</h3>
+        <p>
+            This experiment shows how pagination can be done using JQuery. We have multiple paragraph tags inside the div. In the jquery,
+            we decide how many paragraph text can be shown on a single page. Currently the number is 3. We have functions in Jquery to
+            directly jump on the page number or even navigating using previous and next links.
+        </p>
+        <hr/>
+        <input type='hidden' id='current_page' />
+        <input type='hidden' id='show_per_page' /> 
+        <div id='content'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Curabitur a ipsum ut elit porttitor egestas non vitae libero.</p>
+            <p>Pellentesque ac sem ac sem tincidunt euismod.</p>
+            <p>Duis hendrerit purus vitae nibh tincidunt bibendum.</p>
+            <p>Nullam in nisi sit amet velit placerat laoreet.</p>
+            <p>Vestibulum posuere ligula non dolor semper vel facilisis orci ultrices.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>In non eros eu lacus vestibulum sodales.</p>
+            <p>Duis ultrices metus sit amet sem adipiscing sit amet blandit orci convallis.</p>
+            <p>Proin ullamcorper est vitae lorem mollis bibendum.</p>
+            <p>Maecenas congue fringilla enim, tristique laoreet tortor adipiscing eget.</p>
+            <p>Duis imperdiet metus et lorem venenatis nec porta libero porttitor.</p>
+            <p>Maecenas lacinia lectus ac nulla commodo lacinia.</p>
+            <p>Maecenas quis massa nisl, sed aliquet tortor.</p>
+            <p>Quisque porttitor tellus ut ligula mattis luctus.</p>
+            <p>In at mi dolor, at consectetur risus.</p>
+            <p>Etiam id erat ut lorem fringilla dictum.</p>
+            <p>Curabitur sagittis dolor ac nisi interdum sed posuere tellus commodo.</p>
+            <p>Pellentesque quis magna vitae quam malesuada aliquet.</p>
+            <p>Curabitur tempus tellus quis orci egestas condimentum.</p>
+            <p>Maecenas laoreet eros ac orci adipiscing pharetra.</p>
+            <p>Nunc non mauris eu nibh tincidunt iaculis.</p>
+            <p>Ut semper leo lacinia purus hendrerit facilisis.</p>
+            <p>Praesent et eros lacinia massa sollicitudin consequat.</p>
+            <p>Proin non mauris in sem iaculis iaculis vel sed diam.</p>
+            <p>Nunc quis quam pulvinar nibh volutpat aliquet eget in ante.</p>
+            <p>In ultricies dui id libero pretium ullamcorper.</p>
+            <p>Morbi laoreet metus vitae ipsum lobortis ultrices.</p>
+            <p>Donec venenatis egestas arcu, quis eleifend erat tempus ullamcorper.</p>
+            <p>Morbi nec leo non enim mollis adipiscing sed et dolor.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Phasellus luctus quam id ligula commodo eu fringilla est cursus.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Cras bibendum ante sed erat pharetra sodales.</p>
+            <p>Donec sollicitudin enim eu mi suscipit luctus posuere eros imperdiet.</p>
+            <p>Vestibulum mollis tortor quis ipsum suscipit in venenatis nulla fermentum.</p>
+            <p>Proin vehicula suscipit felis, vitae facilisis nulla bibendum ac.</p>
+            <p>Cras iaculis neque et orci suscipit id porta risus feugiat.</p>
+            <p>Suspendisse eget tellus purus, ac pulvinar enim.</p>
+            <p>Morbi hendrerit ultrices enim, ac rutrum felis commodo in.</p>
+            <p>Suspendisse sagittis mattis sem, sit amet faucibus nisl fermentum vitae.</p>
+            <p>Nulla sed purus et tellus convallis scelerisque.</p>
+            <p>Nam at justo ut ante consectetur faucibus.</p>
+            <p>Proin dapibus nisi a quam interdum lobortis.</p>
+            <p>Nunc ornare nisi sed mi vehicula eu luctus mauris interdum.</p>
+            <p>Mauris auctor suscipit tellus, at sodales nisi blandit sed.</p>
+        </div>
+
+        <div id='page_navigation'>
+
+        </div>
+
+
+        <div id="footerId">
+            <hr />
+            <section style="clear:both">
+                <h3> Source Code</h3>
+                <a href="../../../fileview/Default.aspx?~/experiments/jqueryUI/002-pagination.html" target="_blank">HTML</a>
+                <a href="../../../fileview/Default.aspx?~/experiments/jqueryUI/pagination.js" target="_blank">Javascript</a>
+                <a href="../../../fileview/Default.aspx?~/experiments/jqueryUI/week3Css.css" target="_blank">CSS</a>
+            </section>
+            
+            <section>
+                <h3> References</h3>
+                <p><a href="http://web.enavu.com/" target="_blank">Pagination Tutorials</a></p>
+            </section>
+        </div>
+    </body>
+</html>

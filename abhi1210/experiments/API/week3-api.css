@@ -1,0 +1,14 @@
+﻿#responseText{
+    width:500px;
+    height:100px;
+}
+
+#resultsText{
+    width:500px;
+    height:300px;
+}
+
+p{
+    font-style:italic;
+    font-weight:bold;
+}

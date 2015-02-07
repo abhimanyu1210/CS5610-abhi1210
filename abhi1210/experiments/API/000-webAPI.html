@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Web API And JSON</title>
+        <script type="text/javascript" src="../../../javascript/jquery/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="../../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+        <script type="text/javascript" src="webAPI.js"></script>
+        <link rel="stylesheet" href="week3-api.css" />
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align:center;"> Web API's And JSON </h1>
+        </header>
+        <hr/>
+
+        <div id="ajaxDiv">
+            <p> 
+                This text area store the response received from an open source Imdb API. JSON.stringify() converts a
+                JSON object into a simple text response.
+            </p>
+            
+            <textarea id="responseText"></textarea>
+        </div>
+
+        <hr />
+        <div id="results">
+            <p>
+                Below text area shows how results from JSON object can be parsed in Jquery and displayed to the user.
+                We can also show these results in a tabular format too. In this example, I have extracted the "countries",
+                "languages" and "plot" from the JSON object and displayed it in the text-area.
+            </p>
+            <textarea id="resultsText"></textarea>
+        </div>
+
+
+        <hr/>
+        <div id="footerId">
+            <hr />
+            <section style="clear:both">
+                <h3> Source Code</h3>
+                <a href="../../../fileview/Default.aspx?~/experiments/API/000-webAPI.html" target="_blank">HTML</a>
+                <a href="../../../fileview/Default.aspx?~/experiments/API/webAPI.js" target="_blank">Javascript</a>
+                <a href="../../../fileview/Default.aspx?~/experiments/API/week3-api.css" target="_blank">CSS</a>
+            </section>
+            
+            <section>
+                <h3> References</h3>
+                <p><a href="https://www.youtube.com/watch?v=eTUstNknCrw" target="_blank">Prof. Jose Annunziato's Lecture</a></p>
+            </section>
+        </div>
+    </body>
+</html>

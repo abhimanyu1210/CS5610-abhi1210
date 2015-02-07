@@ -1,4 +1,13 @@
-﻿.container {
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
@@ -44,16 +53,11 @@
 }
 
 .sideMenu a{
-    transition:all 0.5s ease-in;
     font-family:'Bookman Old Style';
-    font-size:large;
+    font-size:medium;
     font-weight:bold;
     text-align:center;
     color:white;   
-}
-
-.sideMenu a:hover{
-    text-shadow:2px 2px 2px 2px orange;
 }
 
 .sideMenu p{
@@ -92,16 +96,14 @@
 #menuImg{
     margin-top:10px;
     margin-left: 20px;
-    height:80px;
-    width:80px;
+    height:60px;
+    width:60px;
     position:relative;
     -webkit-transition:all 0.2s ease-in;
 }
 
 #menuImg:hover{
     cursor:pointer;
-    -webkit-transform: rotate(180deg);
-    
 }
 
 /*About Me Section*/
@@ -150,8 +152,7 @@
 }
 
 .headshot:hover{
-    -webkit-transform:rotateX(20deg);
-    -webkit-filter:brightness(2);
+    -webkit-filter:hue-rotate(180deg);
 }
 
 .aboutMe div{
@@ -167,10 +168,6 @@
 /*contact me*/
 
 .links{
-    position:fixed;
-    right:0;
-    bottom:0;
-    float:right;
     width:200px;
     margin:auto;
 }
@@ -219,6 +216,11 @@ hr{
     clear:both;
 }
 
+.directLinks p{
+    position:relative;
+    float:left;
+}
+
 .directLinks img{
     border-radius:100%;
     width:150px;
@@ -243,4 +245,39 @@ hr{
 
 .directLinks h2{
     opacity:1;
+}
+
+
+/*Navigation*/
+.cssNav{
+  list-style-type:none;
+  margin:0;
+  padding:10px;
+}
+.cssNav li{
+  height:50px;
+  margin-top:5px;
+  margin-right:10px; 
+  position:relative;
+  opacity:0.8;
+  background: linear-gradient(#292929, #242424);
+}
+.cssNav a {
+  border-bottom: 1px solid black;
+  text-decoration:none;
+  display:block;
+  height:100%;
+  width:100%;
+  line-height:50px;
+  color:#eee;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-left:5px solid transparent;
+  letter-spacing:1px;
+  transition: all 0.3s linear;
+}
+
+li:not(.active):hover a{
+  color: #eee;
+  border-left: 5px solid #FCFCFC;
 }

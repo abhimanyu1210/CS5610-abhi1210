@@ -11,59 +11,6 @@
 
     <title>Abhimanyu Kulkarni</title>
 
-    <style type="text/css">
-        ul.master_navigation
-        {
-            font-size: 100%;
-            font-weight: bold;
-            text-align: center;
-            list-style: none;
-            margin: 0.5em 0;
-            padding: 0;
-        }
-
-        ul.master_navigation li
-        {
-            display: inline-block;
-            padding: 0 0.5%;
-        }
-
-        a
-        {
-            color: #08f;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        a:visited
-        {
-            color: #88f;
-        }
-
-        a:hover
-        {
-            color: #f00;
-        }
-
-        p
-        {
-            text-align: justify;
-        }
-    </style>
-
-    <style type="text/css" media="screen">
-        body {
-            width:900px;
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .pad {
-            padding: 10px;
-        }
-    </style>
-
     <script type="text/javascript" src="../../../javascript/jquery/jquery-2.1.3.js"></script>
         <script type="text/javascript" src="../../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
     <script src="javascript/homepage.js" ></script>
@@ -75,9 +22,8 @@
         <div class="container">
             
             <div id="sideMenuId" class="sideMenu">
-                <p>Menu</p>
                 
-                <ul class="verNavClass">
+                <ul class="cssNav">
                     <li><a href="sitestatistics/" target="_blank">SiteStatistics</a></li>
                     <li><a href="statistics/" target="_blank">Statistics</a></li>
                     <li><a href="source/" target="_blank">Source</a></li>
@@ -141,6 +87,10 @@
                     </a>
                 </div>
                 
+                <footer id="footer">
+                    <p>Abhimanyu Kulkarni | Northeastern University | 2015</p>
+                </footer>  
+
                 <div class="links">
                     <a href="https://www.facebook.com/abhimanyu.kulkarni" target="_blank">
                         <img class="fbIcon" src="images/homepage/fbicon.jpg" />
@@ -151,15 +101,10 @@
                     <a href="https://plus.google.com/+AbhimanyuKulkarni-google/posts" target="_blank">
                         <img class="plusIcon" src="images/homepage/plus.jpg" />
                     </a>
-                    
                 </div>
 
-                
+                 
 
-                
-                <footer id="footer">
-                    <p>Abhimanyu Kulkarni | Northeastern University | 2015</p>
-                </footer>   
             </div>
                            
 

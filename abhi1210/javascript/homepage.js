@@ -18,17 +18,19 @@ var main = function () {
             }
         });
 
-    
-    /*hover on direct links*/
-    $('.menuIcon')
+    /* direct link effects */
+    $('#expLink')
         .hover(function () {
-            if (parseInt(document.getElementById('sideMenuId').offsetLeft, 10) < 0) {
-                $('#sideMenuId').effect("bounce", { direction: 'right', distance: 50, times: 1 });
-                $('#mainPageId').effect("bounce", { direction: 'right', distance: 50, times: 1 });
-            }
+            $("#expLink").effect("highlight", "slow");
         });
-
-    
+    $('#projectLink')
+        .hover(function () {
+            $("#projectLink").effect("highlight", "slow");
+        });
+    $('#docsLink')
+        .hover(function () {
+            $("#docsLink").effect("highlight", "slow");
+        });
 
     /* Slideshow */
     $('.textDiv > p:gt(0)').hide();

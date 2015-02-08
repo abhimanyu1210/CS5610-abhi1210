@@ -1,0 +1,4 @@
+﻿/jqueryUI/000-jqueryUIEffects.html JQuery UI Effects
+/jqueryUI/001-jqueryUIWidgets.html JQuery UI Widgets
+/jqueryUI/002-pagination.html Pagination Using JQuery
+/API/000-webAPI.html Web API And JSON

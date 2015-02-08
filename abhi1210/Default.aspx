@@ -11,8 +11,8 @@
 
     <title>Abhimanyu Kulkarni</title>
 
-    <script type="text/javascript" src="../../../javascript/jquery/jquery-2.1.3.js"></script>
-        <script type="text/javascript" src="../../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+    <script type="text/javascript" src="javascript/jquery/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
     <script src="javascript/homepage.js" ></script>
     <link rel="stylesheet" href="css/homepage.css" />
 </head>

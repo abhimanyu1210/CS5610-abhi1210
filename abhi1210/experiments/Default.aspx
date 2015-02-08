@@ -9,12 +9,31 @@
             body{
                 background:url(images/homepage/experimentsback.jpg) no-repeat right;
             }
+            #table{
+                margin:auto;
+                width: 300px;
+            }
+            #table a{
+                text-align:center
+            }
         </style>
 
     </head>
     <body>
+        <h2> Weekly Experiments - With Story Utility</h2>
+        <div id="table">
+            <ul class="nav nav-stacked">
+                <li><a href="#">Week 01 (Initial Setup)</a></li>
+                <li><a href="../../story/index.htm?../experiments/week02-story.txt">Week - 02</a></li>
+                <li><a href="../../story/index.htm?../experiments/week03-story.txt">Week - 03</a></li>
+                <li><a href="../../story/index.htm?../experiments/week04-story.txt">Week - 04</a></li>
+            </ul>
+        </div>
+
+        <hr />
+
         <form id="form1" runat="server">
-            <h2> Weekly Experiments </h2> 
+            <h2> Weekly Experiments - Direct Links </h2> 
         </form>
         <div>
             <table id="experiments" class="table  table-bordered">

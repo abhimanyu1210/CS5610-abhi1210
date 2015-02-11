@@ -4,8 +4,8 @@
         <title>Various JQueryUI Effects</title>
         <link rel="stylesheet" href="week3Css.css" />
         <link href="../jquery-ui.css" rel="stylesheet">
-        <script type="text/javascript" src="../../../javascript/jquery/jquery-2.1.3.js"></script>
-        <script type="text/javascript" src="../../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+        <script type="text/javascript" src="../../javascript/jquery/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
         <script type="text/javascript" src="jqueryUIExp.js"></script>
     </head>
     
@@ -34,7 +34,24 @@
         <div id="droppable">
             <p>Drop here</p>
         </div>
-
+        
+        <h2 style="clear:both">Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                $(function () {
+                    $("#draggable").draggable();
+                    $("#droppable").droppable({
+                        drop: function (event, ui) {
+                            $(this)
+                              .addClass("ui-state-highlight")
+                              .find("p")
+                              .html("Dropped!");
+                        }
+                    });
+                });
+            </pre>
+        </div>
+        
         <hr/>
         <h3> Drag And Drop At The Correct Place</h3>
         <p>
@@ -61,6 +78,34 @@
             </div>
         </div>
 
+        <h2>Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                                $(function () {
+                                    $("#cs4550Students").draggable();
+                                    $("#cs5610Students").draggable();
+                                    $("#cs4550").droppable({
+                                        accept: "#cs4550Students",
+                                        drop: function (event, ui) {
+                                            $(this)
+                                            .addClass("ui-state-highlight")
+                                            .find("p")
+                                            .html("Dropped!");
+                                        }
+                                    });
+                                    $("#cs5610").droppable({
+                                        accept: "#cs5610Students",
+                                        drop: function (event, ui) {
+                                            $(this)
+                                            .addClass("ui-state-highlight")
+                                            .find("p")
+                                            .html("Dropped!");
+                                        }
+                                    });
+                                });
+            </pre>
+        </div>
+
         <hr/>
         <h3> Resize Boxes - Ghost And Animation</h3>
         <p>The two boxes resize in two different ways. The first one has a ghost effect as well as animated effect. The second one only has a ghost effect.</p>
@@ -74,6 +119,22 @@
                 This box shows a faded background (ghost) when being resized.
             </h3>
         </div> 
+
+        <h2>Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                $(function () {
+                    $("#resizableAnimate").resizable({
+                        animate: true,
+                        ghost:true
+                    });
+                    $("#resizableGhost").resizable({
+                        ghost: true
+                    });
+                });
+            </pre>
+        </div>
+
 
         <hr />
         <h3>Selectable Items Using Jquery-UI</h3>
@@ -94,6 +155,15 @@
                 <li><a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">Experiments</a></li>
             </ul>
 
+        </div>
+
+        <h2>Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                                $(function () {
+                                    $("#selectable").selectable();
+                                });
+            </pre>
         </div>
 
         <hr />
@@ -119,7 +189,16 @@
 
         </div>
 
-
+        <h2>Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                 $(function () {
+                    $("#sortable").sortable();
+                    $("#sortable").disableSelection();
+                    });
+            </pre>
+        </div>
+        
         <div id="footerId">
             <hr />
             <section style="clear:both">

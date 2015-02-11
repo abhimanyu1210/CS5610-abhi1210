@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>GEO-Location API</title>
+    <script type="text/javascript" src="../../../javascript/jquery/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="../../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+    <script type="text/javascript" src="geoAPI.js"></script>
+    <link rel="stylesheet" href="week3-api.css" />
+</head>
+<body>
+    
+    <header>
+        <h1 style="text-align:center;"> Geo-Location </h1>
+    </header>
+    <hr />
+
+    <p>
+        This experiment explores one of the most popular APIs - Geolocation. 
+        We see this on almost every website now. This API get the current location
+        current exact latitude and longitude on button click and displays it in the appropriate text-box.
+    </p>
+
+    <h2>Your Current latitude and longitude are:</h2>
+
+    <p id="err" style="color:red"></p>
+
+
+    <div id="tab">
+        <table>
+            <tr>
+                <td>
+                    <label for="lat">Current Latitude:</label>
+                </td>
+                <td>
+                    <input type="text" id="lat" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lat">Current Longitude:</label>
+                </td>
+                <td>
+                    <input type="text" id="long" />
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="buttondiv">
+        <button id="buttonGeo" onclick="getLocation();">Get My Location</button>
+    </div>
+
+    <hr/>
+
+    <h2>Code Snippet:</h2>
+    <div id="codeSnipp">
+        <pre>
+            function getLocation() {
+
+            if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+            error.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
+            function showPosition(position) {
+            var lat = document.getElementById("lat");
+            var long = document.getElementById("long");
+
+            lat.value = position.coords.latitude;
+            long.value = position.coords.longitude;
+            }
+        </pre>
+    </div>
+
+    <div id="footerId">
+        <hr />
+        <section style="clear:both">
+            <h3> Source Code</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/API/001-geolocationAPI.html" target="_blank">HTML</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/API/geoAPI.js" target="_blank">Javascript</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/API/week3-api.css" target="_blank">CSS</a>
+        </section>
+
+        <section>
+            <h3> References</h3>
+            <a href="http://www.w3schools.com/html/html5_geolocation.asp" target="_blank">W3 Schools</a>
+</section>
+    </div>
+</body>
+</html>

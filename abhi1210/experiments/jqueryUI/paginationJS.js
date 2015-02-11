@@ -1,12 +1,10 @@
 ﻿$(document).ready(function () {
-
     var show_per_page = 3;
     var number_of_items = $('#content').children().size();
     var number_of_pages = Math.ceil(number_of_items / show_per_page);
 
     $('#current_page').val(0);
     $('#show_per_page').val(show_per_page);
-
     var navigation_html = '<a class="previous_link" href="javascript:previous();">Prev</a>';
     var current_link = 0;
     while (number_of_pages > current_link) {
@@ -17,11 +15,8 @@
     navigation_html += '<a class="next_link" href="javascript:next();">Next</a>';
 
     $('#page_navigation').html(navigation_html);
- 
     $('#page_navigation .page_link:first').addClass('active_page');
-
     $('#content').children().css('display', 'none');
- 
     $('#content').children().slice(0, show_per_page).css('display', 'block');
 
 });

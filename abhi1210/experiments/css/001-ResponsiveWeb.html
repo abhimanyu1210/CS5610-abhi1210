@@ -110,6 +110,63 @@
             </ul>
         </div>
 
+        <h3>Code Snippet:</h3>
+        <div style="border:1px solid;">
+            <pre>
+                /* Making Text Responsive*/
+                        #respText p{
+                            width:300px;
+                            float:left;
+                        }
+                        /*Making images responsive*/
+                        h3{
+                            clear:both;
+                        }
+                        img{
+                            width:100%;
+                        }
+                        /* When the screen is for desktop*/
+                        @media screen and (min-width: 750px){
+                            #cubId {
+                                display:none;
+                            }
+                            #catId {
+                                display:none;
+                            }
+                        }
+                        /* When the screen is for a tablet*/
+                        @media screen and (max-width:750px) and (min-width:500px){
+                            #tigerId {
+                                display:none;
+                            }
+                            #catId {
+                                display:none;
+                            }
+                        }
+                        /* When the screen is for phone*/
+                        @media screen and (max-width: 500px){
+                            #tigerId {
+                                display:none;
+                            }
+                            #cubId {
+                                display:none;
+                            }
+                        }
+                        /* When screen goes below horizontal navigation bar link*/
+                        #verNav{
+                            width:100px;
+                            display:none;
+                        }
+                        @media screen and (max-width:975px){
+                            #horNav{
+                                display:none;
+                            }
+                            #verNav{
+                                display:inline;
+                            }
+                        }
+            </pre>
+        </div>
 
         <br/><br />
 

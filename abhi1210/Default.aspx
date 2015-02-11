@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="directLinks">
-                    <a href="experiments/Default.aspx" target="_blank">
+                    <a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">
                         <img id="expLink" src="images/homepage/experimentLink.jpg"/>
                     </a>
                     <a href="experiments/Default.aspx" target="_blank">

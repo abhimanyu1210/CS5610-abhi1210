@@ -2,3 +2,4 @@
 /jqueryUI/001-jqueryUIWidgets.html JQuery UI Widgets
 /jqueryUI/002-pagination.html Pagination Using JQuery
 /API/000-webAPI.html Web API And JSON
+/API/001-geolocationAPI.html Geo-Location

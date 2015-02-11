@@ -12,3 +12,23 @@ p{
     font-style:italic;
     font-weight:bold;
 }
+
+#longDiv{
+    margin-top:10px;
+}
+
+#buttondiv{
+    margin-top:10px;
+    width:1000px;
+    margin:auto;
+}
+
+#buttondiv button{
+    margin-top:30px;
+    height:50px;
+    width:400px;
+}
+
+#codeSnipp{
+    border:1px solid;
+}

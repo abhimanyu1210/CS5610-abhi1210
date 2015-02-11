@@ -7,7 +7,7 @@
                 text-align:center;
             }
             body{
-                background:url(images/homepage/experimentsback.jpg) no-repeat right;
+                background:url(../../images/homepage/experimentsback.jpg) no-repeat right;
             }
             #table{
                 margin:auto;
@@ -76,6 +76,10 @@
                             <li><a href="javascript/002-jqueryShowHide.html" target="_blank">Showing and Hiding HTML Elements Using Jquery</a></li>
                             <li><a href="javascript/003-DraggableCats.html" target="_blank">Draggable Cats Using Jquery UI</a></li>
                         </ul>
+                        <p id="homePageWork"><b>Home Page Work</b></p>
+                        <ul>
+                            <li><a href="javascript/004-HomePageWork.html" target="_blank"> Home-Page - Under Construction</a></li>
+                        </ul>
                     </td>
                     
                 </tr>
@@ -92,6 +96,7 @@
                         <p id="webAPI"><b>Web API And JSON Experiments</b></p>
                         <ul>
                             <li><a href="API/000-webAPI.html" target="_blank">Web API and JSON Introduction</a></li>
+                            <li><a href="API/001-geolocationAPI.html" target="_blank">Geo-location</a></li>
                         </ul>
                     </td>
                     

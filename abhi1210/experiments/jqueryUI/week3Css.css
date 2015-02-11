@@ -84,3 +84,8 @@ hr{
 .active_page{
     background-color:blue;
 }
+
+/*code snippet*/
+#codeSnipp{
+    border:1px solid;
+}

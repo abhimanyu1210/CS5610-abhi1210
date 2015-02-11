@@ -79,6 +79,136 @@
         <div id="keyFrameAnim">
             <img id="testImg" src="../../../images/responsiveImagesTest/effects4.jpg" />
         </div>
+        
+        <h3>Code Snippet:</h3>
+        <div style="border:1px solid;">
+            <pre>
+                                #shapeTransition div{
+                            float:left;
+                            margin-left:10px;
+                        }
+                        h4{
+                            clear:both;
+                        }
+                        img{
+                            height:200px;
+                            width:300px;
+                            -webkit-box-shadow: 3px 3px 3px black;
+                        }
+                        /* Expanding Square */
+                        #expandingSquare{
+                            height:100px;
+                            width:100px;
+                            border:solid 2px;
+                            background-color: gold;
+                            transition:width 2s;
+                            /*Separate code for Safari Browser Transitions*/
+                             -webkit-transition: width 2s;
+                        }
+                        #expandingSquare:hover{
+                            width:100%;
+                        }
+                        /* Color Changing Square */
+                        #colorChangeSquare{
+                            height:100px;
+                            width:100px;
+                            border:2px dashed;
+                            background-color:green;
+                            animation:  background-color linear 2s;
+                            /*Separate code for Safari Browser Transitions*/
+                             -webkit-transition: background-color linear 2s;
+                        }
+                        #colorChangeSquare:hover{
+                            background-color:blueviolet;
+                        }
+                        /*Shape Changing Square */
+                        #shapeChangeSquare{
+                            height:100px;
+                            width:100px;
+                            border:2px solid;
+                            background-color:burlywood;
+                            animation: border-radius linear 5s;
+                            -webkit-animation:border-radius linear 5s;
+                        }
+                        #shapeChangeSquare:hover{
+                            border-radius:50%;
+                        }
+                        /* Image Fading in and out */
+                        /* Place image on top of one another*/
+                        #changeImage{
+                            position:relative;
+                            top:0px;
+                            left:0px;
+                        }
+                        #topImg{
+                            position:relative;
+                            top:0px;
+                            left:0px;
+                        }
+                        #bottomImg{
+                            position:absolute;
+                            top:0px;
+                            left:0px;
+                        }
+                        /* Changing Image opacity on hover*/
+                        #changeImage img {
+                            margin-top:5px;
+    
+                            -webkit-transition:opacity 1s ease-in-out;
+                            transition: opacity 1s ease-in-out;
+                        }
+                        #changeImage img:hover{
+                            opacity:0;
+                        }
+                        /*Zoom in effect */
+                        #zoomImg{
+                            position:relative;
+                            margin-top:5px;
+                            -webkit-transition:all 1s ease-in-out;
+                            transition: all 1s ease-in-out;
+                        }
+                        #zoomImg:hover{
+                            width:400px;
+                            height:300px;
+                        }
+                        /*Blur Image On Hover*/
+                        #blurImg{
+                            position:relative;
+                            margin-top:5px;
+                            transition:all 2s ease-in-out;
+                            -webkit-transition:all 2s ease-in-out;
+                        }
+                        #blurImg:hover{
+                            filter:blur;
+                            -webkit-filter:blur(3px);
+                        }
+                        /*Black and white Effect*/
+                        #bwImg{
+                            position:relative;
+                            margin-top:5px;
+                            transition:all 2s ease-in-out;
+                            -webkit-transition:all 2s ease-in-out;
+                        }
+                        #bwImg:hover{
+                            -webkit-filter:grayscale(100%)
+                        }
+                        /*Keyframe transitions*/
+                        #testImg{
+                            width: 100px;
+                            height: 100px;
+                            position:relative;
+                            background-color:rosybrown;
+                            -webkit-box-shadow:none;
+                            -webkit-animation:animate 4s linear infinite alternate;
+                            animation:animate 4s linear infinite alternate;
+                        }
+                        @-webkit-keyframes animate{
+                            0%   {left:0px; top:0px;}
+                            100% {left:50%; top:0px;}
+                        }
+            </pre>
+        </div>
+
 
         <footer>
             <h3>Source Code:</h3>

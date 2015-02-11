@@ -8,7 +8,9 @@
 /javascript/001-slideshow.html Slide-show Of Images using Javascript
 /javascript/002-jqueryShowHide.html Show-Hide HTML Elements Using JQuery
 /javascript/003-DraggableCats.html Draggable Cats
+/javascript/004-HomePageWork.html Home-Page: Under Construction
 /jqueryUI/000-jqueryUIEffects.html JQuery UI Effects
 /jqueryUI/001-jqueryUIWidgets.html JQuery UI Widgets
 /jqueryUI/002-pagination.html Pagination Using JQuery
 /API/000-webAPI.html Web API And JSON
+/API/001-geolocationAPI.html Geolocation: Fetch Co-ordinates.

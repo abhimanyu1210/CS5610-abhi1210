@@ -85,6 +85,10 @@
                     <a href="experiments/Default.aspx" target="_blank">
                         <img id="docsLink" src="images/homepage/documentation.jpg"/>
                     </a>
+                    <a href="https://github.com/abhimanyu1210/CS5610-abhi1210" target="_blank">
+                        <img id="gitLink" src="images/homepage/github.jpg"/>
+                    </a>
+
                 </div>
                 
                 <footer id="footer">

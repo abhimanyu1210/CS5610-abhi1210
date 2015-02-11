@@ -32,6 +32,11 @@ var main = function () {
             $("#docsLink").effect("highlight", "slow");
         });
 
+    $('#docsLink')
+        .hover(function () {
+            $("#gitLink").effect("highlight", "slow");
+        });
+
     /* Slideshow */
     $('.textDiv > p:gt(0)').hide();
     setInterval(function () {

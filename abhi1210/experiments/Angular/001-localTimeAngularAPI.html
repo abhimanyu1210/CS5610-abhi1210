@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Angular JS And API Experiment</title>
+        <script type="text/javascript" src="../../../javascript/angular/angular.min.js"></script>
+        <script type="text/javascript" src="localTime.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="week5.css" />
+    </head>
+    <body ng-app="app">
+        <h2 style ="text-align:center;"> Local Time API And Angular JS</h2>
+        <hr />
+
+        <h4> Description: </h4>
+        <p>
+            The previous experiment in Angular JS worked on static data,that is, the data in the table was created and inserted
+            manually. This experiment combines the powers of Web-Service API and Angular JS. This is a World-clock where a user
+            can add the city to the table for which he/she needs to check the local time.
+        </p>
+
+        <hr />
+
+        <h4>Experiment:</h4>
+        <div id="expId" ng-controller="timeController">
+            <h1 style="text-align:center;">My World Clock</h1>
+            <hr />
+            <label for="myInp">Enter City/Town/Zip-Code To Search:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input id="myInp" size="40" ng-model="loc" placeholder="Example: Boston, Mumbai, London">
+            <button class="btn-success" ng-click="search()">Fetch Time</button>
+            <hr />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Place</th>
+                        <th>Local Time</th>
+                        <th>Day/Night</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="place in list">
+                        <td>{{place.name}}</td>
+                        <td>{{place.time}}</td>
+                        <td>
+                            <img id="myIcon" ng-src="{{place.icon}}" />
+
+                        </td>
+                        <td>
+                            <button class="btn-danger" ng-click="delete(place)">Remove</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <h4>Code Snippet:</h4>
+        <div id="codeSnipp">
+            <pre>
+                    var app = angular.module("app", []);
+                    var URL = "http://api.worldweatheronline.com/free/v1/tz.ashx?key=a44543c2c00b9558112c48c77e6fd7c075d33067&q=LOC&format=json";
+                    app.controller("timeController", function ($scope, $http) {
+                        var list = [];
+                        $scope.list = list;
+                        $scope.search = function () {
+                            var loc = $scope.loc;
+                            var url = URL.replace("LOC", loc);
+                            $http.get(url).success(function (response) {
+                                var n = response.data.request[0].query;
+                                var t = response.data.time_zone[0].localtime;
+                                var hour = t.split(" ");
+                                hour = hour[1].split(":");
+                                hour = hour[0];
+                                var path = "";
+                                if (hour != null) {
+                                    hour = parseInt(hour);
+                                    if (hour < 18 && hour >= 6)
+                                        path = "../../../images/experiments/sunny.jpg"
+                                    else
+                                        path = "../../../images/experiments/moon.jpg";
+                                }
+                                console.log(hour);
+                                console.log(path);
+                                $scope.list.push({
+                                    name: n,
+                                    time: t,
+                                    icon: path
+                                });
+                            });
+                        };
+                        $scope.delete = function (place) {
+                            console.log(place);
+                            var index = $scope.list.indexOf(place);
+                            $scope.list.splice(index, 1);
+                        };
+                    });
+            </pre>
+        </div>
+        
+        <footer>
+            <h3>Source Code:</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/Angular/001-localTimeAngularAPI.html" target="_blank">HTML</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/Angular/localTime.js" target="_blank">Javascript</a>
+            <a style="padding-left:10px" href="../../../fileview/Default.aspx?~/experiments/Angular/week5.css" target="_blank">CSS</a>
+            
+            <h3>References:</h3>
+            <a href="https://www.youtube.com/watch?v=TRrL5j3MIvo" target="_blank">Youtube:50 Examples Of Angular JS</a>
+        </footer>
+
+    </body>
+</html>

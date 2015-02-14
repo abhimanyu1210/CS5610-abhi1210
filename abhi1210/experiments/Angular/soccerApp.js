@@ -18,12 +18,8 @@ app.controller("SoccerController", function ($scope) {
     }
 
     $scope.addClub = function () {
-        var newClub = { League: $scope.soccer.league, Club: $scope.soccer.club, Founded: $scope.soccer.founded, UEFAStandings: $scope.soccer.uefaStandings, Stadium: $scope.soccer.stadium };
+        var newClub = { League: $scope.soccer.League, Club: $scope.soccer.Club, Founded: $scope.soccer.Founded, UEFAStandings: $scope.soccer.UEFAStandings, Stadium: $scope.soccer.Stadium };
         $scope.soccerData.push(newClub);
-    }
-
-    $scope.selectClub = function (club) {
-        alert($scope.soccer);
     }
 });
 

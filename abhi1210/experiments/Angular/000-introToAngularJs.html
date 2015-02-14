@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Introduction To Angular JS</title>
-        <script type="text/javascript" src="../../../javascript/angular/angular-min.js"></script>
+        <script type="text/javascript" src="../../../javascript/angular/angular.min.js"></script>
         <script type="text/javascript" src="soccerApp.js"></script>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="week5.css" />
@@ -17,7 +17,9 @@
         <p>
             This experiment is performed to get familiar with a new technology - AngularJS. In this experiment, we are using angular model
             to store data about soccer clubs. Angular JS also makes it possible to add and remove records from the object
-            and rerender the page immediately.
+            and rerender the page immediately.<br /><br />
+
+            The green plus button adds a record to the table whereas, the red cross button removes the corresponding record from the table.
         </p>
 
         <hr />
@@ -37,13 +39,13 @@
                         <th>Actions</th>
                     </tr>
                     <tr>
-                        <th><input ng-model="soccer.league" class="form-control" /></th>
-                        <th><input ng-model="soccer.club" class="form-control" /></th>
-                        <th><input ng-model="soccer.founded" class="form-control" /></th>
-                        <th><input ng-model="soccer.uefaStandings" class="form-control" /></th>
-                        <th><input ng-model="soccer.stadium" class="form-control" /></th>
+                        <th><input class="form-control ng-valid ng-dirty" ng-model="soccer.League" /></th>
+                        <th><input class="form-control ng-valid ng-dirty" ng-model="soccer.Club" /></th>
+                        <th><input class="form-control ng-valid ng-dirty" ng-model="soccer.Founded"  /></th>
+                        <th><input class="form-control ng-valid ng-dirty" ng-model="soccer.UEFAStandings"  /></th>
+                        <th><input class="form-control ng-valid ng-dirty" ng-model="soccer.Stadium" /></th>
                         <th>
-                            <button class="btn btn-success" ng-click="addClub();"><span class="glyphicon glyphicon-plus"></span></button>
+                            <button class="btn btn-success" ng-click="addClub();">Add</button>
                         </th>
                     </tr>
                 </thead>
@@ -56,7 +58,7 @@
                         <td>{{eachEntry.UEFAStandings}}</td>
                         <td>{{eachEntry.Stadium}}</td>
                         <td>
-                            <button ng-click="removeClub(eachEntry);" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                            <button ng-click="removeClub(eachEntry);" class="btn btn-danger">Remove</button>
                         </td>
                     </tr>
                     

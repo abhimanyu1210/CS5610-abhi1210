@@ -115,6 +115,7 @@
                         <p id="angularExp"><b>Angular JS Experiments</b></p>
                         <ul>
                             <li><a href="Angular/000-introToAngularJs.html" target="_blank">Introduction To Angular JS</a></li>
+                            <li><a href="Angular/001-localTimeAngularAPI.html" target="_blank">Search Local Time - Angular JS and API</a></li>
                         </ul>
                     </td>
                     

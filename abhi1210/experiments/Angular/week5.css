@@ -2,6 +2,20 @@
     font-weight:bold;
 }
 
+body{
+    padding:20px;
+}
+
 #codeSnipp{
     border:1px solid;
+}
+
+#expId{
+    width: 800px;
+    margin:auto;
+}
+
+#myIcon{
+    height:80px;
+    width:80px;
 }

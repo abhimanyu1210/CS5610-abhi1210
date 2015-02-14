@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Introduction To Angular JS</title>
+        <script type="text/javascript" src="../../../javascript/angular/angular-min.js"></script>
+        <script type="text/javascript" src="soccerApp.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="week5.css" />
+    </head>
+    <body ng-app="SoccerApp">
+        <header>
+            <h2 style="text-align:center;"> Introduction To Angular JS</h2>
+        </header>
+        
+        <hr />
+        <h2>Description:</h2>
+        <p>
+            This experiment is performed to get familiar with a new technology - AngularJS. In this experiment, we are using angular model
+            to store data about soccer clubs. Angular JS also makes it possible to add and remove records from the object
+            and rerender the page immediately.
+        </p>
+
+        <hr />
+        <h2>Experiment:</h2>
+
+        <div ng-controller="SoccerController" class="container">
+            <h3>UEFA Club Standings 2014-15</h3>
+            
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>League</th>
+                        <th>Club</th>
+                        <th>Founded</th>
+                        <th>UEFA Standings</th>
+                        <th>Stadium</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <th><input ng-model="soccer.league" class="form-control" /></th>
+                        <th><input ng-model="soccer.club" class="form-control" /></th>
+                        <th><input ng-model="soccer.founded" class="form-control" /></th>
+                        <th><input ng-model="soccer.uefaStandings" class="form-control" /></th>
+                        <th><input ng-model="soccer.stadium" class="form-control" /></th>
+                        <th>
+                            <button class="btn btn-success" ng-click="addClub();"><span class="glyphicon glyphicon-plus"></span></button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="eachEntry in soccerData">
+                        
+                        <td>{{eachEntry.League}}</td>
+                        <td>{{eachEntry.Club}}</td>
+                        <td>{{eachEntry.Founded}}</td>
+                        <td>{{eachEntry.UEFAStandings}}</td>
+                        <td>{{eachEntry.Stadium}}</td>
+                        <td>
+                            <button ng-click="removeClub(eachEntry);" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        </div>
+
+        <hr />
+        <h2>Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                 var app = angular.module("SoccerApp", []);
+                    app.controller("SoccerController", function ($scope) {
+                        var soccerData = [{ League: "English Premier League", Club: "Chelsea", Founded: "1869", UEFAStandings: "1", Stadium: "Stamford Bridge" },
+                                            { League: "LiGA BBVV", Club: "Barcelona FC", Founded: "1903", UEFAStandings: "2", Stadium: "Camp Nou" },
+                                            { League: "Seria A", Club: "AC Milan", Founded: "1830", UEFAStandings: "19", Stadium: "San Siro" },
+                                            { League: "English Premier League", Club: "Manchester United", Founded: "1709", UEFAStandings: "7", Stadium: "Old Trafford" },
+                                            { League: "Portuguese League", Club: "FC Porto", Founded: "1951", UEFAStandings: "27", Stadium: "Estadio Da Dragao" }];
+                        $scope.soccerData = soccerData;
+                        $scope.removeClub = function (club) {
+                            var index = $scope.soccerData.indexOf(club);
+                            $scope.soccerData.splice(index,1);
+                        }
+                        $scope.addClub = function () {
+                            var newClub = { League: $scope.soccer.league, Club: $scope.soccer.club, Founded: $scope.soccer.founded, UEFAStandings: $scope.soccer.uefaStandings, Stadium: $scope.soccer.stadium };
+                            $scope.soccerData.push(newClub);
+                        }
+                        $scope.selectClub = function (club) {
+                            alert($scope.soccer);
+                        }
+                    });
+
+            </pre>
+        </div>
+        
+        <footer>
+            <h3>Source Code:</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/Angular/000-introToAngularJs.html" target="_blank">HTML</a>
+            <a href="../../../fileview/Default.aspx?~/experiments/Angular/soccerApp.js" target="_blank">Javascript</a>
+            <a style="padding-left:10px" href="../../../fileview/Default.aspx?~/experiments/Angular/week5.css" target="_blank">CSS</a>
+            
+            <h3>References:</h3>
+            <a href="https://www.youtube.com/watch?v=Kan1sMNOlIc" target="_blank">Prof. Jose Annunziato's Lecture</a>
+        </footer>
+
+    </body>
+</html>

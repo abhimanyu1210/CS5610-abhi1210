@@ -102,6 +102,23 @@
                     </td>
                     
                 </tr>
+                
+                <tr>
+                    <td>Week 5 (8st - 15th Feb)</td>
+                    <td>
+                        <p id="APIexp"><b>More API Experiments</b></p>
+                        <ul>
+                            <li><a href="API/002-weatherAPI.html" target="_blank">Weather API - JSON</a></li>
+                            <li><a href="API/003-musicAPI.html" target="_blank">Search Music - AJAX/JSON</a></li>
+                            <li><a href="API/004-mapsAPI.html" target="_blank">Search Location: Google Maps API</a></li>
+                        </ul>
+                        <p id="angularExp"><b>Angular JS Experiments</b></p>
+                        <ul>
+                            <li><a href="Angular/000-introToAngularJs.html" target="_blank">Introduction To Angular JS</a></li>
+                        </ul>
+                    </td>
+                    
+                </tr>
                             
             </table>
         </div>

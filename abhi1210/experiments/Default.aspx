@@ -27,6 +27,7 @@
                 <li><a href="../../story/index.htm?../experiments/week02-story.txt">Week - 02</a></li>
                 <li><a href="../../story/index.htm?../experiments/week03-story.txt">Week - 03</a></li>
                 <li><a href="../../story/index.htm?../experiments/week04-story.txt">Week - 04</a></li>
+                <li><a href="../../story/index.htm?../experiments/week05-story.txt">Week - 05</a></li>
             </ul>
         </div>
 

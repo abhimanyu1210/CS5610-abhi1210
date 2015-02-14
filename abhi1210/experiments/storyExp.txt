@@ -1,16 +1,5 @@
 ﻿/default.aspx List Of Experiments
-/html/000-SemanticElements.html New Semantic Elements in HTML5
-/html/001-Tables.html Tables in HTML5
-/css/000-NavigationBar.htm Navigation Bar Using Custom CSS
-/css/001-ResponsiveWeb.html Responsive Web Design
-/css/002-CSSTransitionsAndAnimations.htm CSS3 Transitions and Animations
-/javascript/000-JSFunctions.html Basic Experiments Using Javascript
-/javascript/001-slideshow.html Slide-show Of Images using Javascript
-/javascript/002-jqueryShowHide.html Show-Hide HTML Elements Using JQuery
-/javascript/003-DraggableCats.html Draggable Cats
-/javascript/004-HomePageWork.html Home-Page: Under Construction
-/jqueryUI/000-jqueryUIEffects.html JQuery UI Effects
-/jqueryUI/001-jqueryUIWidgets.html JQuery UI Widgets
-/jqueryUI/002-pagination.html Pagination Using JQuery
-/API/000-webAPI.html Web API And JSON
-/API/001-geolocationAPI.html Geolocation: Fetch Co-ordinates.
+../story/index.htm?../experiments/week02-story.txt Week-02: HTML And CSS
+../story/index.htm?../experiments/week03-story.txt Week-03: Javascript And Jquery
+../story/index.htm?../experiments/week04-story.txt Week-04: Introduction: Jquery UI And Ajax
+../story/index.htm?../experiments/week05-story.txt Week-05: More Jquery And Ajax

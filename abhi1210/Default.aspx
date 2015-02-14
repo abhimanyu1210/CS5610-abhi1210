@@ -15,6 +15,7 @@
         <script type="text/javascript" src="javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
     <script src="javascript/homepage.js" ></script>
     <link rel="stylesheet" href="css/homepage.css" />
+    <link href="javascript/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet">
 </head>
 
     <body>
@@ -106,13 +107,67 @@
                         <img class="plusIcon" src="images/homepage/plus.jpg" />
                     </a>
                 </div>
-
-                 
-
             </div>
-                           
-
         </div>
         
+        <!-- Mobile Screen-->
+        <div id="mobScreen">
+            
+            <div id="titleBar">    
+                <div id="mobMenu">
+                    <img id="mMenuImg" src="images/homepage/menuIcon.jpg"/>
+                </div>
+                <div id="mobMenuId">
+                    <ul class="mobCssNav">
+                        <li><a href="sitestatistics/" target="_blank">SiteStatistics</a></li>
+                        <li><a href="statistics/" target="_blank">Statistics</a></li>
+                        <li><a href="source/" target="_blank">Source</a></li>
+                        <li><a href="search/" target="_blank">Search</a></li>
+                        <li><a href="searchtree/" target="_blank">SearchTree</a></li>
+                        <li><a href="textview/" target="_blank">TextView</a></li>
+                        <li><a href="filelist.aspx" target="_blank">FileList</a></li>
+                        <li><a href="autofile.aspx" target="_blank">AutoFile</a></li>
+                        <li><a href="images/autoimage.aspx" target="_blank">Images</a></li>
+                        <li><a href="blog/" target="_blank">Blog</a></li>      
+                        <!-- Adding link to experiments -->
+                        <li><a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">Experiments</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="mobContainer">
+                <h2>Abhimanyu Kulkarni</h2>
+                <ul>
+                    <li><a href="#tabs-1">About Me</a></li>
+                    <li><a href="#tabs-2">My Gallery</a></li>
+                    <li><a href="#tabs-3">Contact Me</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>
+                        <b>
+                        Hello! My name is Abhimanyu Kulkarni and I am pursuing my Masters Degree in computer science at Northeastern University.
+                        I was born and raised in India and NOOO!! I don't eat or like spicy food. <br />I am a strong enthusiast in the field of computers with an
+                        undying zest of learning new technologies.When I am not coding, I like to watch and play soccer(#CFC).
+                        </b>
+                    </p>
+
+                    <p>
+                        <b>
+                        This page is created as part of CS5610-Web Development course under Dr. Jose Annunziato. As part of the course work,
+                        I have performed various <a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">experiments</a> on web-development. Please feel free to browse around and provide any feedback you
+                        may have.
+                        </b>
+                    </p>
+                </div>
+                <div id="tabs-2">
+                </div>
+                <div id="tabs-3">
+
+                </div>
+            </div>
+
+
+        </div>
+                
     </body>
 </html>

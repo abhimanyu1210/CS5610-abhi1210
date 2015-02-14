@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Weather - API</title>
+        <script type="text/javascript" src="../../../javascript/jquery/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="../../../javascript/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+        <script type="text/javascript" src="weatherAPI.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="week3-api.css" />
+    </head>
+    <body style="padding:50px;">
+        <header>
+            <h1 style="text-align:center;"> Weather API </h1>
+        </header>
+        <hr />
+
+        <h4>Description:</h4>
+        <p>
+            This experiment takes in the city as input and shows its current weather conditions. If the city is not 
+            found, appropriate message is shown to the user. This was done using open Weather API which gets the 
+            weather of a city and displays it in the table below.
+        </p>
+
+        <hr/>
+        <h4>Experiment:</h4>
+        <div id="experimentDiv">
+            <label for="cityInp">Enter City:</label>
+            <input type="text" placeholder="Enter City Here" id="cityInp" />
+            <button id="weatherBtn" class="button" onclick="getWeather();"> Get Weather</button>
+
+
+            <hr/>
+            <div id="resultsDiv">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th>Current Temperature(F)</th>
+                            <th>Min. Temperature(F)</th>
+                            <th>Max. Temperature(F)</th>
+                            <th>Wind(km/hr)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="resultTr">
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="codeSnipp">
+            <pre>
+                    function getWeather() {
+                        var city = $("#cityInp").val();
+    
+                        if (city == undefined || city == "")
+                            alert("Please Enter A Valid City");
+                        else {
+                            $.ajax({
+                                url: "http://api.openweathermap.org/data/2.5/weather?q=" + city,
+                                dataType: "json",
+                                success: function (weather) {
+                                    var tr = $("#resultTr");
+                                    var temp = weather.main.temp;
+                                    temp = (temp - 273.15) * 1.8 + 32;
+                                    var min_temp = weather.main.temp_min;
+                                    min_temp = (min_temp - 273.15) * 1.8 + 32;
+                                    var max_temp = weather.main.temp_max;
+                                    max_temp = (max_temp - 273.15) * 1.8 + 32;
+                                    tr.empty();
+                                    $("&lt;td &gt;").append(city).appendTo(tr);
+                                    $("&lt;td &gt;").append(weather.sys.country).appendTo(tr);
+                                    $("&lt;td &gt;").append(temp).appendTo(tr);
+                                    $("&lt;td &gt;").append(min_temp).appendTo(tr);
+                                    $("&lt;td &gt;").append(max_temp).appendTo(tr);
+                                    $("&lt;td &gt;").append(weather.wind.speed).appendTo(tr);
+                                }
+                            });
+                        }
+                    };
+            </pre>
+        </div>
+        
+
+        <hr />
+        <div id="footerId">
+            <hr />
+            <section style="clear:both">
+                <h3> Source Code</h3>
+                <a href="../../../fileview/Default.aspx?~/experiments/API/002-weatherAPI.html" target="_blank">HTML</a>
+                <a href="../../../fileview/Default.aspx?~/experiments/API/weatherAPI.js" target="_blank">Javascript</a>
+                <a href="../../../fileview/Default.aspx?~/experiments/API/week3-api.css" target="_blank">CSS</a>
+            </section>
+
+            <section>
+                <h3> References</h3>
+                <a href="https://www.youtube.com/watch?v=mErJ3HFWZHs" target="_blank">Prof. Jose Annunziato's Lecture</a>
+            </section>
+        </div>
+
+
+    </body>
+</html>

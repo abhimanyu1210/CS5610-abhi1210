@@ -1,4 +1,7 @@
 var main = function () {
+    /* Hide and show mobile menu */
+    $("#mobMenuId").hide();
+
     var openMenu = "images/homepage/menuIcon.jpg";
     var closeMenu = "images/homepage/backIcon.jpg"
     
@@ -37,6 +40,9 @@ var main = function () {
             $("#gitLink").effect("highlight", "slow");
         });
 
+    
+
+
     /* Slideshow */
     $('.textDiv > p:gt(0)').hide();
     setInterval(function () {
@@ -48,6 +54,29 @@ var main = function () {
           .appendTo('.textDiv');
     }, 7000);
 
+    /*mobile screen effects*/
+    $("#mainScreen").accordion();
+
+
+    $("#mMenuImg")
+        .click(function () {
+            var src = $("#mMenuImg").attr('src');
+            
+            if (src == openMenu) {
+                $("#mMenuImg").attr("src", closeMenu);
+                $("#mobMenuId").show("pulsate");
+
+            }
+            else {
+                $("#mobMenuId").hide("slide");
+                $("#mMenuImg").attr("src", openMenu);
+            }
+        });
+
+    $("#mobContainer").tabs();
+
+    // Start image slide show on mobile photos tab
+    slideshow();
 };
 
 

@@ -9,7 +9,6 @@
 }
 
 p{
-    font-style:italic;
     font-weight:bold;
 }
 
@@ -32,3 +31,28 @@ p{
 #codeSnipp{
     border:1px solid;
 }
+
+
+#tbody img{
+    height:200px;
+    width:200px;
+}
+
+.experiment{
+    margin-top:80px;
+    height:800px;
+    width:100%;
+}
+
+#mapdisplay{
+    width:600px;
+    height:600px;
+    margin:auto;
+    box-shadow:10px 10px 10px black;
+}
+
+#inputId{
+    width: 200px;
+    margin:auto;
+}
+

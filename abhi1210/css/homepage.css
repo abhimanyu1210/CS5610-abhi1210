@@ -213,8 +213,9 @@ hr{
 .directLinks{
     width:750px;
     margin:auto;
-    clear:both;
 }
+
+
 
 .directLinks p{
     position:relative;
@@ -277,7 +278,70 @@ hr{
   transition: all 0.3s linear;
 }
 
-li:not(.active):hover a{
+.cssNav li:not(.active):hover a{
   color: #eee;
   border-left: 5px solid #FCFCFC;
+}
+
+/* Mobile Screen Layout Configuration */
+@media screen and (min-width:768px){
+    #mobScreen{
+        display:none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        display:none;
+    }
+}
+
+#mMenuImg{
+    height:40px;
+    width:40px;
+    padding:10px;
+}
+
+#mobScreen{
+    background:url(../images/homepage/homeBackground2.jpg) repeat center;
+}
+
+#mobMenuId{
+    width:200px;
+}
+
+.mobCssNav{
+    left:0;
+    padding-left:0;
+}
+
+.mobCssNav li{
+    margin:5px;
+    border-radius:20px;
+    border:1px solid;
+    text-align:center;
+    list-style-type:none;
+    background: -webkit-gradient(radial, 80% 20%, 0, 80% 40%, 100, from(#1a82f7), to(#2F2727));
+    -webkit-transition:all 0.4s ease-in-out;
+}
+
+.mobCssNav a{
+    clear:both;
+    color:white;
+    font-size:large;
+}
+
+.mobCssNav li:hover{
+    -webkit-transform:translateX(10px);
+}
+
+#mobContainer h2{
+    width:300px;
+    padding:10px;
+    margin:auto;
+    -webkit-animation:animateHead 1s infinite alternate;
+}
+
+@-webkit-keyframes animateHead{
+    0%   {color:burlywood;}
 }

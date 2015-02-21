@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Introduction To Angular JS - Routing</title>
+    <script type="text/javascript" src="../../../javascript/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../../../javascript/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="routing.js"></script>
+    <link rel="stylesheet" href="week6.css" />
+</head>
+<body ng-app="IntroToAngularRouting">
+    <header>
+        <h2 style="text-align:center;"> Introduction To AngularJS - Routing</h2>
+    </header>
+
+    <hr />
+    <h2>Description:</h2>
+    <p>
+        This is the first time I have been introduced to Routing using Angular JS. Using Angular JS Routing we can bring up multiple 
+        view in a single html page. The interesting part here is that there is no need for a page refresh when we switch between views. This experiments
+        shows navigation between 3 HTML views inside this single HTML page..<br /><br />
+
+    </p>
+
+    <hr />
+    <h2>Experiment:</h2>
+
+    <div class="exp">
+        <h3>Home Page</h3>
+
+        <nav>
+            <a href="#/page1"> Go To Page 1</a>
+            <a href="#/page2"> Go To Page 2</a>
+            <a href="#/page3"> Go To Page 3</a>
+        </nav>
+        <div ng-view>
+
+        </div>
+    </div>
+
+
+    <hr />
+    <h2> Code Snippet: </h2>
+
+    <div id="codeSnipp">
+        <pre>
+            var app = angular.module('IntroToAngularRouting', ['ngRoute']);
+            app.config(['$routeProvider',
+            function ($routeProvider) {
+            $routeProvider.
+            when('/page1', {
+            templateUrl: 'extras/page1.html'
+            }).
+            when('/page2', {
+            templateUrl: 'extras/page2.html'
+            }).
+            when('/page3', {
+            templateUrl: 'extras/page3.html'
+            }).
+            otherwise({
+            redirectTo: '/page1'
+            });
+            }]);
+        </pre>
+    </div>
+
+    <hr />
+    <footer>
+        <h3>Source Code:</h3>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/000-IntroToAngularRouting.html" target="_blank">HTML</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/extras/page1.html" target="_blank">Page 1</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/extras/page2.html" target="_blank">Page 2</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/extras/page3.html" target="_blank">Page 3</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/routing.js" target="_blank">Javascript</a>
+        <a style="padding-left:10px" href="../../../fileview/Default.aspx?~/experiments/AngularRouting/week6.css" target="_blank">CSS</a>
+        
+        <h3>References:</h3>
+        <a href="http://www.w3schools.com/angular/angular_examples.asp" target="_blank">Angular JS Routing Examples</a>
+    </footer>
+
+</body>
+</html>

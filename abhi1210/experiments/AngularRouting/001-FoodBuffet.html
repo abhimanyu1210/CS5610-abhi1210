@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Food Buffet</title>
+    <script type="text/javascript" src="../../../javascript/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../../../javascript/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="sharedataRouting.js"></script>
+    <script type="text/javascript" src="sharedataRoutingService.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="week6.css" />
+</head>
+<body ng-app="AngularRoutingFoodBuffet">
+    <header>
+        <h2 style="text-align:center;"> Buffet In Restaurant - Add Items To Plate</h2>
+    </header>
+
+    <hr />
+    <h2>Description:</h2>
+    <p>
+        This experiment shows how to share data between two html routing views inside a container view.
+        The home page shows a list of available items on the Menu of a restaurant. By clicking the greeb add button
+        besides it, you can add the item to the plate.<br />
+        The second routing page is the plate. All items added on the Home Page to the plate are visible here.
+    </p>
+
+    <hr />
+    <h2> Experiment : </h2>
+
+    <div id="expId">
+        <nav>
+            <a href="#/Menu">Buffet Menu</a><br />
+            <a href="#/Plate">My Plate</a>
+        </nav>
+        <div ng-view>
+
+
+        </div>
+    </div>
+
+    <hr />
+    <h2> Code Snippet 1: </h2>
+
+    <div id="codeSnipp">
+        <pre>
+                        var app = angular.module('AngularRoutingFoodBuffet', ['ngRoute']);
+                            app.config(['$routeProvider',
+                                function ($routeProvider) {
+                                    $routeProvider.
+                                        when('/Menu', {
+                                            templateUrl: 'extras/Menu.html',
+                                            controller: 'MenuController'
+                                        }).
+                                        when('/Plate', {
+                                            templateUrl: 'extras/Plate.html',
+                                            controller: 'PlateController'
+                                        }).
+                                        otherwise({
+                                            redirectTo: '/Menu'
+                                        });
+                                }]);
+                            app.controller("MenuController", function ($scope, BuffetService) {
+                                $scope.buffet = BuffetService.getFood();
+                                $scope.addFoodItem = function (item) {
+                                    BuffetService.addItem(item);
+                                }
+                            });
+                            app.controller("PlateController", function ($scope, BuffetService) {
+                                $scope.fooditems = BuffetService.getItems();
+                                $scope.removeFood = function (item) {
+                                    BuffetService.removeFood(item);
+                                }
+                            });
+
+        </pre>
+    </div>
+    
+    <h2> Code Snippet 2: </h2>
+
+    <div id="codeSnipp">
+        <pre>
+            app.factory('BuffetService', function buffetService() {
+                    var buffet = ['Burger', 'Pizza', 'Pasta', 'Noodles', 'Indian Parantha'];
+                    var foodItems = [];
+                    var getFood = function () {
+                        return buffet;
+                    }
+                    var addItem = function (item) {
+                        foodItems.push(item);
+                        buffet.splice(buffet.indexOf(item), 1);
+                    }
+                    var removeItem= function (item) {
+                        buffet.push(item);
+                        foodItems.splice(foodItems.indexOf(item), 1);
+                    }
+                    var getItems = function () {
+                        return foodItems;
+                    }
+                    return {
+                        getFood: getFood,
+                        addItem: addItem,
+                        removeItem: removeItem,
+                        getItems: getItems
+                    }
+                });
+        </pre>
+    </div>
+
+    <hr />
+    <footer>
+        <h3>Source Code:</h3>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/001-FoodBuffet.html" target="_blank">HTML</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/extras/Menu.html" target="_blank">Menu</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/extras/Plate.html" target="_blank">My Plate</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/shareddataRouting.js" target="_blank">Javascript 1</a>
+        <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/shareddataRoutingService.js" target="_blank">Javascript 1</a>
+        <a style="padding-left:10px" href="../../../fileview/Default.aspx?~/experiments/AngularRouting/week6.css" target="_blank">CSS</a>
+
+        <h3>References:</h3>
+        <a href="https://www.youtube.com/watch?v=QETUuZ27N0w" target="_blank">Angular JS Routing Tutorial</a>
+    </footer>
+</body>
+</html>

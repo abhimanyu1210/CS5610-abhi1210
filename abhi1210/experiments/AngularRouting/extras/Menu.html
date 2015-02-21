@@ -1,0 +1,15 @@
+﻿<h2> Buffet Menu </h2>
+<table class="table  table-bordered">
+    <thead>
+        <tr>
+            <th>Buffet Item</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="food in buffet | orderBy: food">
+            <td> {{food}}</td>
+            <td><button class="btn btn-success" ng-click="addFoodItem(food);">Add To Plate</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿<h2>My Plate</h2>
+<p> Food Items That I have added to my plate</p>
+
+<table class="table  table-bordered">
+    <thead>
+        <tr>
+            <th>Food Items</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="food in fooditems">
+            <td>{{food}}</td>
+            <td><button ng-click="removeFood(food);" class="btn btn-danger">Remove</button></td>
+        </tr>
+    </tbody>
+</table>

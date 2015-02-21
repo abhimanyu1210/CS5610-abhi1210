@@ -3,3 +3,4 @@
 ../story/index.htm?../experiments/week03-story.txt Week-03: Javascript And Jquery
 ../story/index.htm?../experiments/week04-story.txt Week-04: Introduction: Jquery UI And Ajax
 ../story/index.htm?../experiments/week05-story.txt Week-05: More Jquery And Ajax
+../story/index.htm?../experiments/week06-story.txt Week-06: Angular JS Routing

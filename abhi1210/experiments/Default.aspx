@@ -28,6 +28,7 @@
                 <li><a href="../../story/index.htm?../experiments/week03-story.txt">Week - 03</a></li>
                 <li><a href="../../story/index.htm?../experiments/week04-story.txt">Week - 04</a></li>
                 <li><a href="../../story/index.htm?../experiments/week05-story.txt">Week - 05</a></li>
+                <li><a href="../../story/index.htm?../experiments/week06-story.txt">Week - 06</a></li>
             </ul>
         </div>
 
@@ -116,6 +117,18 @@
                         <ul>
                             <li><a href="Angular/000-introToAngularJs.html" target="_blank">Introduction To Angular JS</a></li>
                             <li><a href="Angular/001-localTimeAngularAPI.html" target="_blank">Search Local Time - Angular JS and API</a></li>
+                        </ul>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Week 6 (16st - 23th Feb)</td>
+                    <td>
+                        <p id="Routing"><b>Angular JS Routing Experiments</b></p>
+                        <ul>
+                            <li><a href="AngularRouting/000-IntroToAngularRouting.html" target="_blank">Introduction To Angular JS Routing</a></li>
+                            <li><a href="AngularRouting/001-FoodBuffet.html" target="_blank">Food Buffet</a></li>
                         </ul>
                     </td>
                     

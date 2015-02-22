@@ -1,2 +1,3 @@
 ﻿/AngularRouting/000-IntroToAngularRouting.html Introduction To Angular JS Routing
 /AngularRouting/001-FoodBuffet.html Restaurant Buffet System - Add Food To Plate
+/AngularRouting/002-IntroToRouteParams.html Using $routeParams To Pass Params: Angular JS Routing

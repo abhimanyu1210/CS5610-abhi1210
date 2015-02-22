@@ -129,6 +129,7 @@
                         <ul>
                             <li><a href="AngularRouting/000-IntroToAngularRouting.html" target="_blank">Introduction To Angular JS Routing</a></li>
                             <li><a href="AngularRouting/001-FoodBuffet.html" target="_blank">Food Buffet</a></li>
+                            <li><a href="AngularRouting/002-IntroToRouteParams.html" target="_blank">Using $routeParams To Pass Parameters Between Views</a></li>
                         </ul>
                     </td>
                     

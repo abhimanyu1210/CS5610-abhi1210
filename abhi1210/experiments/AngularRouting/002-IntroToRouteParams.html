@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS - Using Route Params</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="week6.css" />
+    <script type="text/javascript" src="../../../javascript/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../../../javascript/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="routingParams.js"></script>
+</head>
+    <body ng-app="RoutingParams">
+
+        <header>
+            <h2 style="text-align:center;"> Angular JS - Using $routeParams</h2>
+        </header>
+
+        <hr />
+        <h2>Description:</h2>
+        <p>
+            Angular JS Routing has a powerful tool of passing parameters to contained HTML views. By using 
+            $routeParams service you can retrieve the current set of parameters. This is a simple example of 
+            passing the phone ID to the the HTML view. The phone id is embedded into the route path and can 
+            be shown in the internal HTML view.
+        </p>
+
+        <h2>Experiment:</h2>
+        <hr />
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Phone ID</th>
+                    <th>Phone Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1234</td>
+                    <td>Motorola X - Gen 2</td>
+                    <td><a href="#/1234">Open Phone Details</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>5412</td>
+                    <td>Iphone 6</td>
+                    <td><a href="#/5412">Open Phone Details</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>9874</td>
+                    <td>Samsung Galaxy</td>
+                    <td><a href="#/9874">Open Phone Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div ng-view>
+
+        </div>
+        
+        <h2>Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                        var routingParams = angular.module('RoutingParams', ['ngRoute']);
+                        routingParams.config(['$routeProvider',
+                          function ($routeProvider) {
+                              $routeProvider.
+                                when('/:phoneId', {
+                                    templateUrl: 'extras/phoneDetails.html',
+                                    controller: 'ShowPhoneDetailController'
+                                });
+                          }]);
+                        routingParams.controller('ShowPhoneDetailController', function ($scope, $routeParams) {
+                            $scope.phoneId = $routeParams.phoneId;
+                        });
+           </pre>
+        </div>
+
+        <hr />
+        <footer>
+            <h3>Source Code:</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/002-IntroToRouteParams.html" target="_blank">Main HTML</a><br/>
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/extras/phoneDetails.html" target="_blank">Phone Details HTML</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/routingParams.js" target="_blank">Javascript</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/week6.css" target="_blank">CSS</a><br />
+
+            <h3>References:</h3>
+            <a href="https://docs.angularjs.org/api/ngRoute/service/$routeParams" target="_blank">Angular JS Routing - Official Page</a><br />
+            <a href="https://www.youtube.com/watch?v=PlAxG8R_zXI" target="_blank">Prof. Jose Annunziato's Lecture</a><br />
+        </footer>
+    </body>
+</html>

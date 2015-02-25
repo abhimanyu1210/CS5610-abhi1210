@@ -1,3 +1,5 @@
 ﻿/AngularRouting/000-IntroToAngularRouting.html Introduction To Angular JS Routing
 /AngularRouting/001-FoodBuffet.html Restaurant Buffet System - Add Food To Plate
 /AngularRouting/002-IntroToRouteParams.html Using $routeParams To Pass Params: Angular JS Routing
+/AngularRouting/003-ToDoList.html To-Do Task Saver Using Angular JS
+/AngularRouting/004-AnimationsAndAngularJS.html Animations In Angular JS: ng-animate

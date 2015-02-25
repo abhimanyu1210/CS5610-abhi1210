@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Angular JS Animations Using ng-animate</title>
+        <script type="text/javascript" src="../../../javascript/angular/angular-1-1-5.js"></script>
+        <script type="text/javascript" src="animateAngular.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="animateAngular.css" />
+    </head>
+    <body ng-app>
+        <h2 style="text-align:center">Angular JS Animations Using ng-animate</h2>
+        <hr />
+
+        <h2>Description:</h2>
+        <p>
+            This experiment mixes the world of CSS3 animations with Angular JS. In the below experiment, as you type in the
+            letters from any of the songs, the songs filter and in animated fashion. By defining the animations in a CSS file
+            and then adding it to the li tag using ng-animate, the songs that do not match the filter criteria leave by moving 
+            right. 
+        </p>
+
+        <hr />
+        <h2>Experiment:</h2>
+        <div ng-controller="myCtrl">
+            <label for="filter">Type Song You Want To Filter In Below Text-Box</label><br />
+            <input id="filter" type="text" ng-model="search" placeholder="Start Typing Here">
+            <hr />
+            <ul>
+                <li ng-animate="'animate'" ng-repeat="song in songs | filter:search">
+                    <h3>{{song}}</h3>
+                </li>
+            </ul>
+            <hr />
+        </div>
+
+        <h2>Code Snippet:</h2>
+        <p>HTML</p>
+        <pre>
+            &lt; ng-controller="myCtrl"&gt;
+                        &lt;input type="text" ng-model="search"&gt;
+                        &lt;ul&gt;
+                        &lt;li ng-animate="'animate'" ng-repeat="song in songs | filter:search"&gt;
+                        &lt;h3&gt;{{song}}&lt;/h3&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+            &lt;/div&gt;
+        </pre>
+
+        <p>Javascript</p>
+        <pre>
+            function myCtrl($scope) {
+                $scope.songs = ['Uptown Funk','Thinking Out Loud','Love me Like you do','Four Five Seconds','Sugar', 'Animals', 'Blank Space'];
+            }
+        </pre>
+
+        <p>CSS</p>
+        <pre>
+            p{
+                font-weight:bold;
+            }
+            #codeSnipp{
+                border:1px solid;
+            }
+            body{
+                padding:80px;
+            }
+            li{
+                list-style-type:none;
+            }
+            .animate-enter, .animate-leave {
+                -webkit-transition: 500ms ease-in all;
+                -moz-transition: 500ms ease-in all;
+                position: relative;
+                display: block;
+            } 
+            .animate-enter.animate-enter-active, .animate-leave {
+                left: 0;
+            }
+            .animate-leave.animate-leave-active, .animate-enter {
+                left: 500px;
+            }
+        </pre>
+
+
+        <hr />
+        <footer>
+            <h3>Source Code:</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/004-AnimationsAndAngularJs.html" target="_blank">HTML</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/animateAngular.js" target="_blank">Javascript</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/animateAngular.css" target="_blank">CSS Animations</a><br />
+
+            <h3>References:</h3>
+            <a href="http://www.nganimate.org/" target="_blank">Angular JS ng-animate Tutorial</a>
+        </footer>
+    </body>
+</html>

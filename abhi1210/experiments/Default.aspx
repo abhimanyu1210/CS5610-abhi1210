@@ -130,6 +130,8 @@
                             <li><a href="AngularRouting/000-IntroToAngularRouting.html" target="_blank">Introduction To Angular JS Routing</a></li>
                             <li><a href="AngularRouting/001-FoodBuffet.html" target="_blank">Food Buffet</a></li>
                             <li><a href="AngularRouting/002-IntroToRouteParams.html" target="_blank">Using $routeParams To Pass Parameters Between Views</a></li>
+                            <li><a href="AngularRouting/003-ToDoList.html" target="_blank">To-Do List Using Angular JS</a></li>
+                            <li><a href="AngularRouting/004-AnimationsAndAngularJS.html" target="_blank">Animations In Angular JS: ng-animate</a></li>
                         </ul>
                     </td>
                     

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>To Do List Using Angular JS</title>
+    <script type="text/javascript" src="../../../javascript/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../../../javascript/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="003-tasks.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="week6.css" />
+</head>
+    <body ng-app="ToDoApp">
+        <header>
+            <h1>Angular JS : Maintaining A To-Do List</h1>
+        </header>
+        <hr />
+        <h2> Description: </h2>
+        <p>
+            This is a simple experiment using Angular where user can add tasks he/she needs to do to the 
+            list of tasks. By clicking the button "Add Task", any text with the current time-stamp will be 
+            added to the list of tasks below displayed in the table.
+            The limit of adding the characters is 100. This information is also dynamically given to 
+            the user as he/she is typing in the task.  The number of characters cannot go above 100. Also, there is 
+            a button to clear the task entered in the text-area.
+        </p>
+
+        <hr />
+        <h2> Experiment: </h2>
+        <div ng-controller="TodoController" class="form">
+            <p>
+                <b>Enter Your To-Do Task Here:</b>
+            </p>
+            <textarea ng-model="todoMessage" cols="50" rows="10" placeholder="Enter Your Task To Do"></textarea>
+            <p>
+                <button ng-click="addTask()">Add Task</button>
+                <button ng-click="clearTask()">Clear Text Area</button>
+            </p>
+            <p>
+                <b>Number Of Characters Left : <span ng-bind="charactersLeft()"></span></b>
+            </p>
+            <hr />
+            <p>Your To - Do List: </p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Created Date And Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="task in tasks">
+                        <td>{{task.title}}</td>
+                        <td>{{task.date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <hr />
+        <h2> Code Snippet:</h2>
+        <div id="codeSnipp">
+            <pre>
+                        app = angular.module("ToDoApp", []);
+                        app.controller("TodoController", function ($scope) {
+                            $scope.tasks = [];
+                            $scope.todoMessage = "";
+                            $scope.charactersLeft = function () {
+                                if ($scope.todoMessage.length > 100)
+                                    $scope.todoMessage = $scope.todoMessage.substring(0, 100);
+                                var charactersRemaining = 100 - $scope.todoMessage.length;
+                                return charactersRemaining;
+                            };
+                            $scope.clearTask = function () {
+                                if ($scope.todoMessage == '')
+                                    alert("Nothing To Clear!!");
+                                else
+                                    $scope.todoMessage = "";
+                            };  
+                            $scope.addTask = function () {
+                                $scope.today = new Date();
+                                if ($scope.todoMessage == '') {
+                                    alert("Enter A Task To Add");
+                                } else {
+                                    var task = {
+                                        title: $scope.todoMessage,
+                                        date: $scope.today
+                                    }
+                                    $scope.tasks.push(task);
+                                }
+        
+                            };
+                        });
+            </pre>
+        </div>
+
+        <hr />
+        <footer>
+            <h3>Source Code:</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/003-ToDoList.html" target="_blank">HTML</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/003-tasks.js" target="_blank">Javascript</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/AngularRouting/week6.css" target="_blank">CSS</a><br />
+
+            <h3>References:</h3>
+            <a href="https://www.youtube.com/watch?v=KCTKd5ZmXMQ" target="_blank">Prof. Jose Annunziato's Lecture</a>
+        </footer>
+    </body>
+</html>

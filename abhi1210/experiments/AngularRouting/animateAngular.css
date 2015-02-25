@@ -1,0 +1,28 @@
+﻿p{
+    font-weight:bold;
+}
+
+#codeSnipp{
+    border:1px solid;
+}
+
+body{
+    padding:80px;
+}
+
+li{
+    list-style-type:none;
+}
+
+.animate-enter, .animate-leave {
+    -webkit-transition: 500ms ease-in all;
+    -moz-transition: 500ms ease-in all;
+    position: relative;
+    display: block;
+} 
+.animate-enter.animate-enter-active, .animate-leave {
+    left: 0;
+}
+.animate-leave.animate-leave-active, .animate-enter {
+    left: 500px;
+}

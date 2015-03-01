@@ -45,18 +45,16 @@
         
         <p> Client App JS </p>
         <pre>
-                                var app = angular.module("MovieNodeJSApp", []);
-                                app.controller("MovieNodeJSController", function ($scope, $http) {
-                                $http.get("/movies")
-                                .success(function (response) {
-                                $scope.moviesList = response;
-                                });
-                                $scope.remove = function (index) {
-                                $http.delete("/movies/" + index)
-                                .success(function (response) {
-                                $scope.moviesList = response;
-                                });
-                                };
+                                var app = angular.module("StaticMessageApp", []);
+                                app.controller("StaticMessageController", function ($scope, $http) {
+                                    $scope.serverMessage = null;
+                                    $scope.callServer = function () {
+                                        $http.get('/callServer')
+                                            .success(function (response) {
+                                                $scope.serverMessage = response;
+                                            });
+                                    };
+    
                                 });
             </pre>
 

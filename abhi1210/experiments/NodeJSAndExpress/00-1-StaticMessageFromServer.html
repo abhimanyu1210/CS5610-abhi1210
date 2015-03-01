@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Static Message From Node JS Server<</title>
+    <script src="public/js/jquery-2.1.3.js" type="text/javascript"></script>
+    <script src="public/js/bootstrap.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="public/css/bootstrap.css" />
+</head>
+<body>
+    <header>
+        <h2 style="text-align:center">Static Message From Node JS Server</h2>
+    </header>
+    <hr />
+    <h3>Description</h3>
+    <p>
+        This is my first attempt to connect to serverApp.js where all the data and all functions
+        reside. This experiment simply makes a GET call to the server and receives a response from the
+        server when running.
+    </p>
+    <hr />
+
+    <h3>Experiment:</h3>
+
+    <div class="container">
+        <h4>Server App JS Running:</h4>
+        <img style="border:2px solid" src="../../../images/experiments/serverAppjsRunning.jpg" />
+        <hr />
+
+        <h4>Experiment Page:</h4>
+        <h5>Before Button Clicked</h5>
+        <img style="border:2px solid" src="../../../images/experiments/staticMessageNoResponse.jpg" />
+        <hr />
+
+        <h5>After Get Request To Server</h5>
+        <img style="border:2px solid" src="../../../images/experiments/staticMessageWithResponse.jpg" />
+        <hr />
+    </div>
+    
+
+    <hr />
+
+    <h3>Code Snippet:</h3>
+    <div class="container">
+        
+        <p> Client App JS </p>
+        <pre>
+                                var app = angular.module("MovieNodeJSApp", []);
+                                app.controller("MovieNodeJSController", function ($scope, $http) {
+                                $http.get("/movies")
+                                .success(function (response) {
+                                $scope.moviesList = response;
+                                });
+                                $scope.remove = function (index) {
+                                $http.delete("/movies/" + index)
+                                .success(function (response) {
+                                $scope.moviesList = response;
+                                });
+                                };
+                                });
+            </pre>
+
+        <p> Server App JS </p>
+        <pre>
+                        /* 1st Experiment Calling Server*/
+                        app.get('/callServer', function (req, res) {
+                            res.send("HELLO FROM SERVER");
+                        });
+        </pre>
+    </div>
+
+
+    <div id="footerId">
+        <hr />
+        <section style="clear:both">
+            <h3> Source Code</h3>
+            <a href="../../../fileview/Default.aspx?~/experiments/NodeJSAndExpress/public/StaticMessageFromServer.html" target="_blank">HTML</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/NodeJSAndExpress/public/staticmessageClientApp.js" target="_blank">Client App JS</a><br />
+            <a href="../../../fileview/Default.aspx?~/experiments/NodeJSAndExpress/serverApp.js" target="_blank">Server App JS</a><br />
+        </section>
+
+        <section>
+            <h3> References</h3>
+            <a href="https://www.youtube.com/watch?v=Lnd_uSEpCdo" target="_blank">Prof. Jose Annunziato's Lecture</a>
+        </section>
+    </div>
+</body>
+</html>

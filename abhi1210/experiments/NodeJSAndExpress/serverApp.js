@@ -8,6 +8,12 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(multer()); // for parsing multipart/form-data
 
+/* 1st Experiment Calling Server*/
+app.get('/callServer', function (req, res) {
+    res.send("HELLO FROM SERVER");
+});
+
+
 var movies = [{ title: "Shawshank Redemption", year: "1994", rating: "9.2" },
                 { title: "Godfather", year: "1972", rating: "9.2" },
                 { title: "Dark Knight", year: "2008", rating: "8.9" },
@@ -41,5 +47,8 @@ app.put("/movies/:index", function (req, res) {
     console.log(movies);
     res.json(movies);
 });
+
+
+
 
 app.listen(3000);

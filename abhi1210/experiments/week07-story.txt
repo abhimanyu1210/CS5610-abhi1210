@@ -1,0 +1,5 @@
+﻿/NodeJSAndExpress/00-1-StaticMessageFromServer.html Static Message From Node JS Server
+/NodeJSAndExpress/000-LocalNodeJS.html Introduction To Node JS And Express
+/NodeJSAndExpress/001-LocalNodeJS.html Handling Updates In Node JS And Express
+http://nodejs-cs5610abhi.rhcloud.com/003-NodeJSAndOpenShift.html Using Node JS And Open-Shift Redux
+http://nodejs-cs5610abhi.rhcloud.com/004-APIDataWithOpenShift.html AJAX/API Calls in NODE JS

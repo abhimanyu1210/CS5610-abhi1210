@@ -29,6 +29,7 @@
                 <li><a href="../../story/index.htm?../experiments/week04-story.txt">Week - 04</a></li>
                 <li><a href="../../story/index.htm?../experiments/week05-story.txt">Week - 05</a></li>
                 <li><a href="../../story/index.htm?../experiments/week06-story.txt">Week - 06</a></li>
+                <li><a href="../../story/index.htm?../experiments/week07-story.txt">Week - 07</a></li>
             </ul>
         </div>
 
@@ -132,6 +133,22 @@
                             <li><a href="AngularRouting/002-IntroToRouteParams.html" target="_blank">Using $routeParams To Pass Parameters Between Views</a></li>
                             <li><a href="AngularRouting/003-ToDoList.html" target="_blank">To-Do List Using Angular JS</a></li>
                             <li><a href="AngularRouting/004-AnimationsAndAngularJS.html" target="_blank">Animations In Angular JS: ng-animate</a></li>
+                        </ul>
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Week 07 (23rd Feb - 1st Mar)</td>
+                    <td>
+                        <p id="NodeJS"><b>Node JS And OpenShift</b></p>
+                        <ul>
+                            <li><a href="NodeJSAndExpress/00-1-StaticMessageFromServer.html" target="_blank">Simple Static Message From Node JS Server</a></li>
+                            <li><a href="NodeJSAndExpress/000-LocalNodeJS.html" target="_blank">Introduction To Node JS And Express</a></li>
+                            <li><a href="NodeJSAndExpress/001-LocalNodeJS.html" target="_blank">Handling Updates In Node JS And Express</a></li>
+                            <li><a href="http://nodejs-cs5610abhi.rhcloud.com/003-NodeJSAndOpenShift.html" target="_blank">Using Node JS And Open-Shift Redux</a></li>
+                            <li><a href="http://nodejs-cs5610abhi.rhcloud.com/004-APIDataWithOpenShift.html" target="_blank">AJAX/API Calls in NODE JS</a></li>
+
                         </ul>
                     </td>
                     

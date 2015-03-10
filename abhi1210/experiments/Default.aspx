@@ -143,12 +143,18 @@
                     <td>
                         <p id="NodeJS"><b>Node JS And OpenShift</b></p>
                         <ul>
-                            <li><a href="NodeJSAndExpress/00-1-StaticMessageFromServer.html" target="_blank">Simple Static Message From Node JS Server</a></li>
-                            <li><a href="NodeJSAndExpress/000-LocalNodeJS.html" target="_blank">Introduction To Node JS And Express</a></li>
-                            <li><a href="NodeJSAndExpress/001-LocalNodeJS.html" target="_blank">Handling Updates In Node JS And Express</a></li>
-                            <li><a href="http://nodejs-cs5610abhi.rhcloud.com/003-NodeJSAndOpenShift.html" target="_blank">Using Node JS And Open-Shift Redux</a></li>
-                            <li><a href="http://nodejs-cs5610abhi.rhcloud.com/004-APIDataWithOpenShift.html" target="_blank">AJAX/API Calls in NODE JS</a></li>
-
+                            <li><a href="http://nodejs-cs5610abhi.rhcloud.com" target="_blank">Index Page: Node JS Experiments</a></li>
+                        </ul>
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Week 08 (2nd Mar - 8th Mar)</td>
+                    <td>
+                        <p id="MongoDB"><b>MongoDB And Open-Shift</b></p>
+                        <ul>
+                            <li><a href="http://mongonodejs-cs5610abhi.rhcloud.com/" target="_blank">Index Page: MongoDB Experiments</a></li>
                         </ul>
                     </td>
                     

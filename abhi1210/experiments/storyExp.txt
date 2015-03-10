@@ -5,3 +5,4 @@
 ../story/index.htm?../experiments/week05-story.txt Week-05: More Jquery And Ajax
 ../story/index.htm?../experiments/week06-story.txt Week-06: Angular JS Routing
 ../story/index.htm?../experiments/week07-story.txt Week-07: Node JS Experiments
+../story/index.htm?../experiments/week08-story.txt Week-08: MongoDB And Mongoose Experiments

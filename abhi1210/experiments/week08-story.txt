@@ -1,3 +1,5 @@
 ﻿http://mongonodejs-cs5610abhi.rhcloud.com/000-BasicQueryFromMongoDB.html Basic Query On MongoDB
 http://mongonodejs-cs5610abhi.rhcloud.com/001-InsertRemoveFromMongoDB.html Insert and Delete Operation On MongoDB
 http://mongonodejs-cs5610abhi.rhcloud.com/002-ReminderAppMongoDB.html Reminder Application Using MongoDB
+http://mongonodejs-cs5610abhi.rhcloud.com/003-NestedSchemaMongoDB.html Nested Schema in MongoDB
+http://mongonodejs-cs5610abhi.rhcloud.com/004-CoursesNestedSchema.html Courses And Professors - Nested Schema

@@ -79,11 +79,11 @@
                     <a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">
                         <img id="expLink" src="images/homepage/experimentLink.jpg"/>
                     </a>
-                    <a href="experiments/Default.aspx" target="_blank">
+                    <a href="experiments/UnderConstructionPage.html" target="_blank">
                         <img id="projectLink" src="images/homepage/projectLink.jpg"/>
                     </a>
 
-                    <a href="experiments/Default.aspx" target="_blank">
+                    <a href="experiments/UnderConstructionPage.html" target="_blank">
                         <img id="docsLink" src="images/homepage/documentation.jpg"/>
                     </a>
                     <a href="https://github.com/abhimanyu1210/CS5610-abhi1210" target="_blank">

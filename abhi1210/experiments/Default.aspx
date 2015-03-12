@@ -30,6 +30,7 @@
                 <li><a href="../../story/index.htm?../experiments/week05-story.txt">Week - 05</a></li>
                 <li><a href="../../story/index.htm?../experiments/week06-story.txt">Week - 06</a></li>
                 <li><a href="../../story/index.htm?../experiments/week07-story.txt">Week - 07</a></li>
+                <li><a href="../../story/index.htm?../experiments/week08-story.txt">Week - 08</a></li>
             </ul>
         </div>
 
@@ -154,7 +155,7 @@
                     <td>
                         <p id="MongoDB"><b>MongoDB And Open-Shift</b></p>
                         <ul>
-                            <li><a href="http://mongonodejs-cs5610abhi.rhcloud.com/" target="_blank">Index Page: MongoDB Experiments</a></li>
+                            <li><a href="http://mongonodejs-cs5610abhi.rhcloud.com" target="_blank">Index Page: MongoDB Experiments</a></li>
                         </ul>
                     </td>
                     

@@ -1,0 +1,3 @@
+﻿http://mongonodejs-cs5610abhi.rhcloud.com/000-SimplePassportJS.html Basic PassportJS Authentication App
+http://mongonodejs-cs5610abhi.rhcloud.com/001-ProfileInformation.html Configuring Profile On Login - PassportJS
+http://mongonodejs-cs5610abhi.rhcloud.com/002-RegisterCapabilityPassportMongo.html Register & Authenticate user with MongoDB And PassportJS

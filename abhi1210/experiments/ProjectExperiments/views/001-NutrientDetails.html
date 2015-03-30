@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id="nutrientInfoId" ng-show="nutrientInfoArr.length > 0" class="container">
+            <hr />
+            <h2 style="background-color:brown;text-align:center ;color:white">Nutrient Facts</h2>
+            <hr />
+            <table class="table table-bordered">
+                <thead>
+                    <tr style="background-color:brown;color:white">
+                        <th style="text-align:center;">Nutrient</th>
+                        <th style="text-align:center;">Quantity per 100g</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color:white">
+                    <tr id="resultsTR" ng-repeat="nutrientInfo in nutrientInfoArr">
+                        <td>{{nutrientInfo.nutrient}}</td>
+                        <td>{{nutrientInfo.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

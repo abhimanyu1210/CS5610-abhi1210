@@ -20,7 +20,7 @@
 
     </head>
     <body>
-        <h2> Weekly Experiments - With Story Utility</h2>
+        <h2> Weekly Experiments - Story Utility</h2>
         <div id="table">
             <ul class="nav nav-stacked">
                 <li><a href="#">Week 01 (Initial Setup)</a></li>
@@ -32,12 +32,13 @@
                 <li><a href="../../story/index.htm?../experiments/week07-story.txt">Week - 07</a></li>
                 <li><a href="../../story/index.htm?../experiments/week08-story.txt">Week - 08</a></li>
                 <li><a href="../../story/index.htm?../experiments/week09-story.txt">Week - 09</a></li>
+                <li><a href="../../story/index.htm?../experiments/week10-story.txt">Week - 10</a></li>
             </ul>
         </div>
 
         <hr />
 
-        <form id="form1" runat="server">
+        <!--<form id="form1" runat="server">
             <h2> Weekly Experiments - Direct Links </h2> 
         </form>
         <div>
@@ -163,5 +164,5 @@
                 </tr>
                             
             </table>
-        </div>
+        </div>-->
     </body>

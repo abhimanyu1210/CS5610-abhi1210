@@ -1,0 +1,28 @@
+﻿body {
+    background:url(images/searchbackground.jpg) fixed no-repeat;
+    background-size:cover;
+    max-width:100%;
+    height:inherit;
+}
+
+#searchBar{
+    padding-top:200px;
+    margin:auto;
+    width: 50%;
+}
+
+
+#freebaseLogo{
+    width:120px;
+    height:30px;
+}
+
+#logoImgDiv{
+    width:300px;
+    margin:auto;
+}
+
+#resultsTR td{
+    font-size:medium;
+    text-align:center;
+}

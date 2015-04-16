@@ -1,0 +1,77 @@
+﻿body{
+    background:url(profile.jpg) center fixed;
+}
+
+.rowSearch{
+    text-align:center;
+}
+.searchContainer h2{
+    text-align:center;
+    font-family:'Comic Sans MS';
+    font-size:40px;
+    font-weight:bold;
+}
+
+.rowSearch input{
+    font-family:'Comic Sans MS';
+    font-size:17px;
+}
+
+.rowSearch button{
+    font-family:'Comic Sans MS';
+    font-size:17px;
+    border-radius:100px;
+}
+
+#imagesReturned{
+    border:2px solid black;
+}
+
+.searchResultsContainer a{
+    text-decoration: none;
+    font-family:'Comic Sans MS';
+    font-size:15px;
+    text-align:center;
+}
+
+.searchResultsContainer{
+  margin:20px;
+}
+
+.resultsHead h2{
+    text-align:center;
+    font-family:'Comic Sans MS';
+    font-size:40px;
+    font-weight:bold;
+}
+
+#imagesReturned:hover{
+    cursor:pointer;
+}
+
+#resultsDiv{
+    text-align:center;
+    margin-top:10px;
+}
+
+#noResults{
+    margin-top:10px;
+    text-align:center;
+    font-family:'Comic Sans MS';
+    font-size:15px;
+}
+
+#noResults label{
+    color:red;
+}
+
+.animate-enter, .animate-leave {
+    -webkit-transition: transform ease-in all;
+    -moz-transition: transform ease-in all;
+} 
+.animate-enter.animate-enter-active, .animate-leave {
+    transform: translateX(-100%);
+}
+.animate-leave.animate-leave-active, .animate-enter {
+    transform: translateX(100%);
+}

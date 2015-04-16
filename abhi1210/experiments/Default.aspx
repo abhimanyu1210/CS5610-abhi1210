@@ -33,6 +33,7 @@
                 <li><a href="../../story/index.htm?../experiments/week08-story.txt">Week - 08</a></li>
                 <li><a href="../../story/index.htm?../experiments/week09-story.txt">Week - 09</a></li>
                 <li><a href="../../story/index.htm?../experiments/week10-story.txt">Week - 10</a></li>
+                <li><a href="../../story/index.htm?../experiments/week11-story.txt">Week - 11</a></li>
             </ul>
         </div>
 

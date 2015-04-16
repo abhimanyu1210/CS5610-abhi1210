@@ -1,0 +1,221 @@
+﻿<html>
+    <head>
+        <title>Exercise Tracker Experiment</title>
+        <script src="../js/angular.js" type="text/javascript"></script>
+        <script src="../js/angular-route.js" type="text/javascript"></script>
+        <script src="../js/jquery-2.1.3.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="exercisetracker.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="exercisetracker.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+    </head>
+    <body ng-app="ExerciseTracker">
+        <div class="well">
+            <header>
+                <h1 style="text-align:center">Exercise Tracker Experiment</h1>
+            </header>
+
+            <hr />
+
+            <h3>Description: </h3>
+            <p>
+                This functionality will be inculded in the project as the Exercise Tracker option for registered users. Users will 
+                be able to log their calories burned in the application. On their dashboard they will be able to track all the calorie 
+                information they need
+            </p>
+
+            <p>
+                In this experiment, a drop down gives the user to choose from a choice of exercises. THese are general exercises that we do 
+                in our daily activities. Apart from that, he has to choose the length of the workout he logged. When the user hits the 'Calculate Calories'
+                button, an animated number will show the calories burned.
+            </p>
+        </div>
+
+
+        <div ng-controller="ExerciseTrackerController">
+            <div class="well container exerciseTracker">
+                <h2><span class="glyphicon glyphicon-road"></span>Exercise Tracker</h2>
+                <div>&nbsp;</div>
+                <form>
+                    <div class="row exerClass">
+                        <div class="col-md-5">
+                            <label>Workout Type:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control" ng-model="chosenExer" required>
+                                <option ng-repeat="exer in AllExercises" value="{{exer.exervalue}}">
+                                    {{exer.exername}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="row exerClass">
+                        <div class="col-md-5">
+                            <label>Workout Length:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input ng-model="minutes" type="number" min="1" class="form-control" placeholder="Length of work-out in minutes" />
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="row exerClass">
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="row errorClass">
+                        <label>{{Err}}</label>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="buttonClass">
+                        <button ng-click="calculateCalories();" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-calendar"></span>&nbsp;Calculate Calories
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="well container resultClass" ng-show="CaloriesBurned">
+                <h2><span class="glyphicon glyphicon-fire"></span>&nbsp;You Burned</h2>
+                <div class="caloriesBurned">
+                    <label id="calsBurned"></label>calories
+                </div>
+            </div>
+
+            <div class="well">
+                <hr />
+                <h2>Code Snippet:</h2>
+                <div>
+                    <h2>HTML</h2>
+                    <pre>
+                    &lt;div ng-controller="ExerciseTrackerController"&gt;
+                        &lt;div class="well container exerciseTracker"&gt;
+                            &lt;h2&gt;&lt;span class="glyphicon glyphicon-road"&gt;&lt;/span&gt;Exercise Tracker&lt;/h2&gt;
+                        &lt;div&gt;&nbsp;&lt;/div&gt;
+                        &lt;form&gt;
+                        &lt;div class="row exerClass"&gt;
+                            &lt;div class="col-md-5"&gt;
+                                 &lt;label&gt;Workout Type:&lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;div class="col-md-6"&gt;
+                        &lt;select class="form-control" ng-model="chosenExer" required&gt;
+                        &lt;option ng-repeat="exer in AllExercises" value="{{exer.exervalue}}"&gt;
+                                        {{exer.exername}}
+                                    &lt;/option&gt;
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+                        &lt;div class="col-md-1"&gt;&nbsp;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;&nbsp;&lt;/div&gt;
+                        &lt;div class="row exerClass"&gt;
+                        &lt;div class="col-md-5"&gt;
+                            &lt;label&gt;Workout Length:&lt;/label&gt;
+                            &lt;/div&gt;
+                                &lt;div class="col-md-6"&gt;
+                                    &lt;input ng-model="minutes" type="number" min="1" class="form-control" placeholder="Length of work-out in minutes" /&gt;
+                                &lt;/div&gt;
+                            &lt;div class="col-md-1"&gt;&nbsp;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;&nbsp;&lt;/div&gt;
+                        &lt;div class="row exerClass"&gt;
+                            &lt;div class="col-md-1"&gt;&nbsp;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;&nbsp;&lt;/div&gt;
+                                &lt;div class="row errorClass"&gt;
+                                &lt;label&gt;{{Err}}&lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;div&gt;&nbsp;&lt;/div&gt;
+                        &lt;div class="buttonClass"&gt;
+                        &lt;button ng-click="calculateCalories();" class="btn btn-primary"&gt;
+                            &lt;span class="glyphicon glyphicon-calendar"&gt;&lt;/span&gt;&nbsp;Calculate Calories
+                        &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+                        &lt;div class="well container resultClass" ng-show="CaloriesBurned"&gt;
+                        &lt;h2&gt;&lt;span class="glyphicon glyphicon-fire"&gt;&lt;/span&gt;&nbsp;You Burned&lt;/h2&gt;
+                        &lt;div class="caloriesBurned"&gt;
+                        &lt;label id="calsBurned"&gt;&lt;/label&gt;calories
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </pre>
+                    <hr />
+
+                    <h3>Exercise Tracker JS</h3>
+                    <div>
+                        <pre>
+                        var app = angular.module("ExerciseTracker", []);
+                        app.controller('ExerciseTrackerController', function ($scope, $http, $location, $rootScope) {
+                            $scope.AllExercises = [];
+                            $http({ method: 'GET', url: 'exer.csv' })
+                                .success(function (data) {
+                                    var arr = data.split('\n');
+                                    var allExerArr = [];
+                                    for (var i in arr) {
+                                        var splittedArr = arr[i].split(',');
+                                        var exerObj = { exername: $.trim(splittedArr[0]), exervalue: $.trim(splittedArr[1]) };
+                                        $scope.AllExercises.push(exerObj);
+                                    }
+                                });
+    
+                            $scope.Err = null;
+                            $scope.calculateCalories = function () {
+                                if (validations()) {
+                                    $scope.CaloriesBurned = $scope.chosenExer * $scope.minutes * (60 * 2.2);
+                                    animateNumber(0, Math.floor($scope.CaloriesBurned), 100);
+                                }
+                            }
+                            var animateNumber = function animateValue(start, end, duration) {
+                                var range = end - start;
+                                var current = start;
+                                var increment = end > start ? 1 : -1;
+                                var stepTime = Math.abs(Math.floor(duration / range));
+                                var timer = setInterval(function () {
+                                    current += increment;
+                                    $("#calsBurned").text(current);
+                                    if (current == end) {
+                                        clearInterval(timer);
+                                    }
+                                }, stepTime);
+                            }
+                            var validations = function () {
+                                if (!$scope.chosenExer) {
+                                    $scope.Err = "Please choose a work out type from the list";
+                                    return false;
+                                }
+                                if (!$scope.minutes) {
+                                    $scope.Err = "Length of Work-out cannot be left blank";
+                                    return false;
+                                }
+                                return true;
+                            }
+                        });
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="well">
+            <div id="footerId">
+                <hr />
+                <section style="clear:both">
+                    <h3> Source Code</h3>
+                    <a href="../../../fileview/Default.aspx?~/experiments/ProjectExperiments2/001ExerciseTracker/ExerciseTracker.html" target="_blank">HTML</a><br />
+                    <a href="../../../fileview/Default.aspx?~/experiments/ProjectExperiments2/001ExerciseTracker/exercisetracker.js" target="_blank">Calorie Tracker JS</a><br />
+                    <a href="../../../fileview/Default.aspx?~/experiments/ProjectExperiments2/001ExerciseTracker/exercosetracker.css" target="_blank">CSS</a><br />
+                </section>
+
+                <section>
+                    <h3> References</h3>
+                    <a href="https://www.youtube.com/channel/UCCgliN1n-OaiYJbZV8gypNA" target="_blank">Prof. Jose Annunziato's Lectures</a>
+                </section>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

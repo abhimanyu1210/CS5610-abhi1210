@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Limitation And Future Scope</title>
+        <script src="js/jquery-2.1.3.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="documentationStyles.css" />
+    </head>
+    <body>
+
+        <div class="well">
+            <h1>Project Limitation And Future Scope</h1>
+
+
+            <div>
+                <p>
+                    The application is built robustly and the User Interface is speedy and easy to use. 
+                    The logic behind the application needs to be accurate since the application indirectly affects a user's 
+                    health. But there are a few limitations I wanted to point out on which I spent a lot of hours to come up with 
+                    a solution. These limitations can be logged as future work that will be done on the application. Some of these 
+                    limitations are:
+
+                    <hr />
+                    <ul>
+                        <li>
+                            Exercise Tracker - It was really difficult to find an open source API. There were very few APIs that can take in the 
+                            the exercise user wants to log and the length and give the calories burned. To solve this, I had to create my own data and 
+                            store it in MongoDB. There are two fields - the exercise name and the calorie burnt per minute for a particular exercise. This data 
+                            can be found in American Health Information Management Association website.                        
+                        </li>
+                        <li>
+                            Search Meals - The plan that I got for food search after exchanging a lot of emails was an academic plan with 30000 hits/eternity. I did put in
+                            a request to raise the number of hits allowed. Apart from that, some rare food items do not have calorie information. I have requested the API team to 
+                            fix this. Although this is a minor issue, it affects the user input in a bad way.
+                        </li>
+                        <li>
+                            Also, if the load on the API server is too heavy, the API returns search results after a small delay. After confirming with the Yummly API team, they mentioned that
+                             this problem is intermittent and can be handled on client side.
+                        </li>
+                    </ul>
+                </p>
+
+
+                <p>
+                    <strong>Browser Limitations:</strong>
+                    <ul>
+                        <li>The application is best viewed in Google chrome on a 1300 x 450 px screen. Due to the responsive nature of the application, it can also be accessed on cell-phone devices and tablets. Other browser do not support a lot of HTML5 elements and 
+                        css3 animations.</li>
+                    </ul>
+                </p>
+            </div>
+
+
+            <div>
+                <h3><strong>Future Scope</strong></h3>
+                <p>
+                    There are a lot of features that can be added to this application. Few of the features are:
+
+                    <ul>
+                        <li>A Mobile App: An Android or IOS for the application</li>
+                        <li>Notifications: Sending notification to user from web application if some one comments or reviews on the food-items a user has liked.</li>
+                        <li>Include Other Nutrients: There is vast information available on recommended daily intake on other essential nutrients like Vitamins, Proteins, Carbohydrates etc. In the future, we can include tracking intake of other nutrients in the same application.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>

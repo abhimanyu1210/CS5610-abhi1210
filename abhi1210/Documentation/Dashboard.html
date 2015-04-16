@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>User Dashboard</title>
+        <script src="js/jquery-2.1.3.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="documentationStyles.css" />
+    </head>
+    <body>
+        <div class="well">
+            <h1>Dashboard Page</h1>
+            <hr />
+
+            <div>
+                The dashboard page is the heart of this application. All useful information and content that the user 
+                of this application should know or have is on this page. Below is a labelled screen shot of the dashboard. Importance of each label is 
+                 explained below.
+            </div>
+            
+            <div>&nbsp;</div>
+            <h2>Dashboard</h2>
+            <div>
+                <img class="screenshot" src="images/dashboard.png" /> 
+
+            </div>
+
+
+            <div>
+                <h3>Dashboard Description:</h3>
+                <ul>
+                    <li>
+                        <strong>1</strong>
+                        <ul>
+                            <li>This is the navigation bar that is fixed to top of the screen</li>
+                            <li>To avoid hindrance of the navigation bar in the flow of the application, it animates and 
+                            hides itself when the user scrolls down.</li>
+                            <li>There are links to the Calorie Tracker, Exercise Tracker, Favorites and Logout on the navigation bar</li>
+                            <li>The navigation bar is fully responsive and collapses for smaller screens</li>
+                        </ul>
+                        <hr />
+                    </li>
+                    
+                    <li>
+                        <strong>2</strong>
+                        <ul>
+                            <li>This shows the calories remaining for the user on that particular day.</li>
+                            <li>
+                                For example, in the screen shot above, the user's recommended intake is 1985 calories per day. He has
+                                 consumed 316 calories worth of meal during that day. He has also burned 95 calories. The total calculation 
+                                comes out to be 1764 calories
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>3</strong>
+                        <ul>
+                            <li>This is an animated progress bar that shows the percentage of calories consumed on a particular day.</li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>4</strong>
+                        <ul>
+                            <li>User has an option to change the date and check his/her past records. </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+
+                    <li>
+                        <strong>5</strong>
+                        <ul>
+                            <li>Below the progress bar, the user can see his recommended daily calorie intake, calories consumed on the date chosen in the date field
+                            , calories burned by logging exercises and calories that were overeaten for a particular day.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>6</strong>
+                        <ul>
+                            <li>
+                                'Log My Meal' is an option that takes the user to search meal page where he can search the meal he consumed and wants to log.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>7</strong>
+                        <ul>
+                            <li>
+                                'My Favorites' takes the user to a screen where all the meals that the user liked are displayed in a table.
+                                He can get information like calorie content of the meal, the meal's snapshot and the instructions to cook 
+                                that meal.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>8</strong>
+                        <ul>
+                            <li>
+                                'Log My Workout' is a button that takes user to the Exercise Tracker page. On that page the user can choose the 
+                                exercise that he did and log the calories that he burned.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>9</strong>
+                        <ul>
+                            <li>
+                                This is a News Feed that the user tracks all the user's activities and shows it in descending order of date. Users can 
+                                also see the activities that other users are doing in this feed. To leverage this, they first have to find users of the application 
+                                and explicitly follow them.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>10</strong>
+                        <ul>
+                            <li>
+                                This is a navigation button that takes user to the top of the page. The activity feed can get too long (We have see this in applications like Facebook, Google+ etc.). This 
+                                button is a quick navigation to the top of the page so that the user does not have to scroll everytime.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>11</strong>
+                        <ul>
+                            <li>
+                                When the user lands on the dashboard, a button on top of the page toggle's the user's information card. This card is like an ID displayed on top of the page and can be hidden or shown.
+                                If the user makes progress and his weight changes or his height increases, he can open up the information card and edit his profile.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>12</strong>
+                        <ul>
+                            <li>
+                                'See Activity Log' is another navigation link that scrolls down to the activity feed section of the page. This makes navigation easy to user and fast.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <strong>13</strong>
+                        <ul>
+                            <li>
+                                By default, the user is shown the activity feed on the dashboard. In this section the user has an option to switch the tabs and open the 'Following' section of 
+                                the page. On that section, user can search for other users by username and follow them or unfollow users that they are already following.
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>

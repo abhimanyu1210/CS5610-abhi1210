@@ -1,0 +1,87 @@
+﻿body {
+    background:url(images/profile.jpg) fixed center;
+    background-size:cover;
+    font-family:'Arial Unicode MS';
+    font-size:18px;
+}
+
+h1{
+    text-align:center;
+}
+
+h3{
+    text-align:center;
+}
+
+#schema{
+    width:1400px;
+}
+
+.well{
+    margin:30px;
+    opacity:0.95;
+}
+
+#aboutProj{
+    text-align:center;
+}
+
+#projectIcon{
+    height:70px;
+    width:300px;
+}
+
+#screenshots{
+    text-align:center;
+}
+
+#screenshots img{
+    width:421px;
+    height:650px;
+    border:3px solid black;
+}
+
+#legendId li img{
+    height:30px;
+    width:40px;
+}
+
+
+img{
+    border:1px solid black;
+}
+
+#legendId li{
+    list-style-type:none;
+}
+
+.flowChart{
+    text-align:center;
+}
+
+.flowChart img{
+    height:700px;
+    width:800px;    
+}
+
+#stayHealthy{
+    text-align:center;
+}
+
+#stayHealthy img{
+    border:0px;
+    height:300px;
+    width:350px;
+}
+
+#yum{
+    height:30px;
+    width:80px;
+    border:0;
+}
+
+ .screenshot{
+     width:1200px;
+ }
+
+

@@ -1,0 +1,25 @@
+﻿body {
+    background:url(profile.jpg) center fixed;
+}
+
+.well{
+    padding:30px;
+    margin:30px;
+}
+
+/*Progress bar*/
+#mycalorieprogress {
+    border-radius: 4px;
+	background: #FFF;
+	overflow: hidden;
+    border:1px solid green;
+    text-align:center;
+    font-family:'Arial Rounded MT';
+    font-weight:bold;
+    font-size:25px;
+    opacity:0.8;
+}
+
+#progressBar{
+    background-image: url(progressBar.gif);
+}

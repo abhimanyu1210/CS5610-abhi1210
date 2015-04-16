@@ -1,0 +1,5 @@
+﻿/ProjectExperiments2/000MealDetails/CalorieTracker.html Meal Details Page - Project
+/ProjectExperiments2/001ExerciseTracker/ExerciseTracker.html Exercise Tracker Page - Project
+/ProjectExperiments2/002AnimatingNavbar/HidingNavbar.html Hiding Nav Bar On Scroll - Project
+/ProjectExperiments2/003NgRouteAnimations/RouteAnimations.html Routing Between Views Smoothly - Project
+/ProjectExperiments2/004AnimatingProgressBar/AnimatingProgressBar.html Progress Bar To Show Calories - Project

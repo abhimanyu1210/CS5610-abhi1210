@@ -1,0 +1,42 @@
+﻿<div id="mealDetailsId" class="row alldetails">
+    <div class="col-md-5 well mealDetailsCard">
+        <div class="mealName">
+            <h2>
+                <span class="glyphicon glyphicon-cutlery"></span> {{Meal.mealName}}
+            </h2>
+        </div>
+
+        <div class="mealImageAndContents">
+            <img class="mealImage" src="{{Meal.image}}" />    
+                    
+            <table class="mealContents table table-striped">
+                <thead>
+                    <tr>
+                        <th><h3>Contents</h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="content in Meal.contents track by $index">
+                        <td>{{content}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-md-5 well calorieAndLoggingCard">
+        <div class="calories">
+            <h2><span class="glyphicon glyphicon-scale"></span> Calories</h2>
+        </div>
+        <div class="calorieVal">
+            <label>{{Meal.calories}}</label>
+        </div>
+    </div>
+
+    <div id="backBtn">
+        <button ng-click="backtosearch();" class="btn btn-danger">
+            Back
+        </button>
+    </div>
+</div>
+

@@ -71,8 +71,10 @@
                             <b>
                             This page is created as part of CS5610-Web Development course under Dr. Jose Annunziato. As part of the course work,
                             I have performed various <a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">experiments</a> on web-development. Please feel free to browse around and provide any feedback you
-                            may have.
+                            may have.<br />
+                            I have designed and developed a web-site called 'Healthy Gobbler' as part of the final semester project under this course. You can try it out here: <a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">Healthy Gobbler</a>
                             </b>
+
                         </p>
                     </div>
                 </div>
@@ -84,28 +86,32 @@
                                 <img id="expLink" src="images/homepage/experimentLink.jpg"/>
                             </a>
                             <div>&nbsp;</div>
-                            <label>Experiments</label>
+                            <!--<label>Experiments</label>-->
+                            <img class="nameClass" src="images/homepage/experiments_name.png"/>
                         </div>
                         <div class="col-1-4">
                             <a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">
                                <img id="projectLink" src="images/homepage/ic_launcher.png"/>
                             </a>
                             <div>&nbsp;</div>
-                            <label>Healthy Gobbler</label>
+                            <!--<label for="projectLink">Healthy Gobbler</label>-->
+                            <img class="nameClass" src="images/homepage/gobblername.png"/>
                         </div>
                         <div class="col-1-4">
                             <a href="./story/index.htm?../Documentation/storyExp.txt" target="_blank">
                                 <img id="docsLink" src="images/homepage/documentation.jpg"/>
                             </a>
                             <div>&nbsp;</div>
-                            <label>Project Documentation</label>
+                            <!--<label>Project Documentation</label>-->
+                            <img class="nameClass" src="images/homepage/projectDocs_name.png"/>
                         </div>
                         <div class="col-1-4">
                             <a href="https://github.com/abhimanyu1210/CS5610-abhi1210" target="_blank">
                                 <img id="gitLink" src="images/homepage/github.jpg"/>
                             </a>
                             <div>&nbsp;</div>
-                            <label>Github</label>
+                            <!--<label>Github</label>-->
+                            <img class="nameClass" src="images/homepage/github_name.png"/>
                         </div>
                     </div>
                 </div>

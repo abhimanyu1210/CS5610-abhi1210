@@ -38,17 +38,11 @@ h3{
 #screenshots img{
     width:421px;
     height:650px;
-    border:3px solid black;
 }
 
 #legendId li img{
     height:30px;
     width:40px;
-}
-
-
-img{
-    border:1px solid black;
 }
 
 #legendId li{
@@ -57,11 +51,6 @@ img{
 
 .flowChart{
     text-align:center;
-}
-
-.flowChart img{
-    height:700px;
-    width:800px;    
 }
 
 #stayHealthy{
@@ -74,14 +63,71 @@ img{
     width:350px;
 }
 
+
+
+#loginRegisterScreens,#homePageScreens, #dashboardImg, #searchmeal, #meal, #exer, #fav, #schemaImg{
+    text-align:center;
+}
+
 #yum{
     height:30px;
     width:80px;
     border:0;
 }
 
- .screenshot{
+.screenshot{
      width:1200px;
- }
+}
+
+#projectAppName{
+    width:250px;
+    height:85px;
+}
+
+.bigScreenshots{
+    width:1000px;
+}
+
+@media screen and (max-width: 1200px){
+    .bigScreenshots{
+        width:800px;
+        height:510px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .bigScreenshots{
+        width:500px;
+        height:310px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .bigScreenshots{
+        width:400px;
+        height:260px;
+    }
+    #screenshots img{
+        width:350px;
+    }
+    #thankYous img{
+        width:350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bigScreenshots{
+        width:175px;
+        height:180px;
+    }
+    #screenshots img{
+        width:175px;
+        height:180px;
+    }
+    #thankYous img{
+        width:150px;
+    }
+}
 
 

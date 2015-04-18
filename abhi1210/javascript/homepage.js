@@ -74,9 +74,6 @@ var main = function () {
         });
 
     $("#mobContainer").tabs();
-
-    // Start image slide show on mobile photos tab
-    slideshow();
 };
 
 

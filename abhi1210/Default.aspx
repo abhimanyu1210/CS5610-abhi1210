@@ -16,6 +16,7 @@
     <script src="javascript/homepage.js" ></script>
     <link rel="stylesheet" href="css/homepage.css" />
     <link href="javascript/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/homepage/ic_launcher.ico" />
 </head>
 
     <body>
@@ -76,26 +77,42 @@
                 </div>
 
                 <div class="directLinks">
-                    <a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">
-                        <img id="expLink" src="images/homepage/experimentLink.jpg"/>
-                    </a>
-                    <a href="experiments/UnderConstructionPage.html" target="_blank">
-                        <img id="projectLink" src="images/homepage/projectLink.jpg"/>
-                    </a>
-
-                    <a href="./story/index.htm?../Documentation/storyExp.txt" target="_blank">
-                        <img id="docsLink" src="images/homepage/documentation.jpg"/>
-                    </a>
-                    <a href="https://github.com/abhimanyu1210/CS5610-abhi1210" target="_blank">
-                        <img id="gitLink" src="images/homepage/github.jpg"/>
-                    </a>
-
+                    <div class="row-4 clearfix">
+                        <div class="col-1-4">
+                            <a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">
+                                <img id="expLink" src="images/homepage/experimentLink.jpg"/>
+                            </a>
+                            <label>Experiments</label>
+                        </div>
+                        <div class="col-1-4">
+                            <a href="experiments/UnderConstructionPage.html" target="_blank">
+                                <img id="projectLink" src="images/homepage/projectLink.jpg"/>
+                            </a>
+                            <label>Project - Healthy Gobbler</label>
+                        </div>
+                        <div class="col-1-4">
+                            <a href="./story/index.htm?../Documentation/storyExp.txt" target="_blank">
+                                <img id="docsLink" src="images/homepage/documentation.jpg"/>
+                            </a>
+                            <label>Project Documentation</label>
+                        </div>
+                        <div class="col-1-4">
+                            <a href="https://github.com/abhimanyu1210/CS5610-abhi1210" target="_blank">
+                                <img id="gitLink" src="images/homepage/github.jpg"/>
+                            </a>
+                            <label>Github</label>
+                        </div>
+                    </div>
                 </div>
-                
-                <footer id="footer">
-                    <p>Abhimanyu Kulkarni | Northeastern University | 2015</p>
-                </footer>  
 
+                <div>&nbsp;</div>
+                
+                <div>
+                    <footer id="footer">
+                        <p>Abhimanyu Kulkarni | Northeastern University | 2015</p>
+                    </footer>  
+                </div>
+                <div>&nbsp;</div>
                 <div class="links">
                     <a href="https://www.facebook.com/abhimanyu.kulkarni" target="_blank">
                         <img class="fbIcon" src="images/homepage/fbicon.jpg" />
@@ -131,16 +148,19 @@
                         <li><a href="blog/" target="_blank">Blog</a></li>      
                         <!-- Adding link to experiments -->
                         <li><a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">Experiments</a></li>
+                        <li><a href="./story/index.htm?../Documentation/storyExp.txt" target="_blank">Project Documentation</a></li>
+                        <li><a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">Project</a></li>
                     </ul>
                 </div>
             </div>
 
             <div id="mobContainer">
-                <h2>Abhimanyu Kulkarni</h2>
+                <h2>
+                    <img class="headshot" src="images/homepage/headshot2.jpg" />
+                </h2>
                 <ul>
                     <li><a href="#tabs-1">About Me</a></li>
-                    <li><a href="#tabs-2">My Gallery</a></li>
-                    <li><a href="#tabs-3">Contact Me</a></li>
+                    <li><a href="#tabs-2">Contact Me</a></li>
                 </ul>
                 <div id="tabs-1">
                     <p>
@@ -160,14 +180,28 @@
                     </p>
                 </div>
                 <div id="tabs-2">
+                    <div id="contactMainDiv">
+                        <h2 class="aboutHeader">
+                            <span class="glyphicon glyphicon-envelope"></span>&nbsp; Contact
+                        </h2>
+
+
+                        <p>
+                            <b>Abhimanyu Kulkarni</b><br />
+                            Northeastern University<br />
+                            360 Huntington Avenue<br />
+                            Boston, MA - 02115.<br />
+                            Email : <a href="mailto:kulkarni.abhi@husky.neu.edu">kulkarni.abhi@husky.neu.edu</a><br />
+                            Phone : 1-617-834-9756
+                        </p>
+
+                        <iframe class="mapLocation"
+                                width="600"
+                                height="450"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpUvdddaA3s-S5d-iP4mlJo9W_QHrYIzk&q=Northeastern+University+Boston&zoom=14"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <div id="tabs-3">
-
-                </div>
-            </div>
-
-
-        </div>
-                
+            </div>        
     </body>
 </html>

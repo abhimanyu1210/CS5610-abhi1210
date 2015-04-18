@@ -39,6 +39,7 @@
                         
                     <!-- Adding link to experiments -->
                     <li><a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">Healthy Gobbler</a></li>
+                    <li><a href="https://github.com/abhimanyu1210/HealthyGobbler/tree/master" target="_blank">Source Code</a></li>
                     <li><a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">Experiments</a></li>
                </ul>
             </div>

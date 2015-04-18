@@ -38,6 +38,7 @@
                     <li><a href="blog/" target="_blank">Blog</a></li>
                         
                     <!-- Adding link to experiments -->
+                    <li><a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">Healthy Gobbler</a></li>
                     <li><a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">Experiments</a></li>
                </ul>
             </div>
@@ -82,37 +83,39 @@
                             <a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">
                                 <img id="expLink" src="images/homepage/experimentLink.jpg"/>
                             </a>
+                            <div>&nbsp;</div>
                             <label>Experiments</label>
                         </div>
                         <div class="col-1-4">
-                            <a href="experiments/UnderConstructionPage.html" target="_blank">
-                                <img id="projectLink" src="images/homepage/projectLink.jpg"/>
+                            <a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">
+                               <img id="projectLink" src="images/homepage/ic_launcher.png"/>
                             </a>
-                            <label>Project - Healthy Gobbler</label>
+                            <div>&nbsp;</div>
+                            <label>Healthy Gobbler</label>
                         </div>
                         <div class="col-1-4">
                             <a href="./story/index.htm?../Documentation/storyExp.txt" target="_blank">
                                 <img id="docsLink" src="images/homepage/documentation.jpg"/>
                             </a>
+                            <div>&nbsp;</div>
                             <label>Project Documentation</label>
                         </div>
                         <div class="col-1-4">
                             <a href="https://github.com/abhimanyu1210/CS5610-abhi1210" target="_blank">
                                 <img id="gitLink" src="images/homepage/github.jpg"/>
                             </a>
+                            <div>&nbsp;</div>
                             <label>Github</label>
                         </div>
                     </div>
                 </div>
 
-                <div>&nbsp;</div>
                 
                 <div>
                     <footer id="footer">
                         <p>Abhimanyu Kulkarni | Northeastern University | 2015</p>
                     </footer>  
                 </div>
-                <div>&nbsp;</div>
                 <div class="links">
                     <a href="https://www.facebook.com/abhimanyu.kulkarni" target="_blank">
                         <img class="fbIcon" src="images/homepage/fbicon.jpg" />
@@ -149,7 +152,7 @@
                         <!-- Adding link to experiments -->
                         <li><a href="./story/index.htm?../experiments/storyExp.txt" target="_blank">Experiments</a></li>
                         <li><a href="./story/index.htm?../Documentation/storyExp.txt" target="_blank">Project Documentation</a></li>
-                        <li><a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">Project</a></li>
+                        <li><a href="http://healthygobbler-abhi1210cs5610.rhcloud.com/views/home/HomePage.html" target="_blank">Healthy Gobbler</a></li>
                     </ul>
                 </div>
             </div>
